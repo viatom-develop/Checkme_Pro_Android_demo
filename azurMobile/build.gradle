@@ -33,11 +33,11 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "com.viatom.newazur"
+        applicationId "com.checkme.newazur"
         minSdkVersion 18
         targetSdkVersion 27
-        versionCode 103
-        versionName '10.0.0'
+        versionCode 1
+        versionName '1.0.0'
 
         ndk {
             moduleName "adpcm_docode"
