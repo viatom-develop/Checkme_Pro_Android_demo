@@ -26,6 +26,6 @@ android {
 
 dependencies {
 //    compile 'com.android.support:support-v4:22.2.0'
-    compile 'com.android.support:support-v4:27.1.1'
-    compile files('libs/nineoldandroids-2.4.0-2.jar')
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation files('libs/nineoldandroids-2.4.0-2.jar')
 }

@@ -15,13 +15,13 @@
         android:layout_marginRight="@dimen/SLMDetailChartMarginLR"
         android:background="@drawable/border_list_item">
 
-        <com.viatom.azur.widget.SLMChart
+        <com.checkme.azur.widget.SLMChart
             android:id="@+id/SLMDetailChartSPO2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <com.viatom.azur.widget.SLMChart
+        <com.checkme.azur.widget.SLMChart
             android:id="@+id/SLMDetailChartPR"
             android:layout_width="match_parent"
             android:layout_height="0dp"

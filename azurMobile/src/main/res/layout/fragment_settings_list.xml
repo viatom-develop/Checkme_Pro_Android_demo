@@ -13,215 +13,10 @@
         android:paddingRight="10dp"
         android:paddingTop="10dp">
 
-        <LinearLayout
-            android:id="@+id/lin_cloud"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone">
-
-            <TextView
-                android:id="@+id/tv_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="@string/cloud_title"
-                android:textColor="@color/default_bkg"
-                android:textSize="18sp"
-                android:textStyle="bold"/>
-
-            <LinearLayout
-                android:id="@+id/lin_email"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/login_shape"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tv_email"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingTop="5dp"
-                    android:text="@string/prompt_email"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/et_email"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2.5"
-                    android:background="@null"
-                    android:focusableInTouchMode="true"
-                    android:hint="@string/email_hint"
-                    android:inputType="textEmailAddress"
-                    android:paddingRight="5dp"
-                    android:selectAllOnFocus="true"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/lin_password"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/login_shape"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tv_password"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:paddingTop="5dp"
-                    android:text="@string/prompt_password"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/et_password"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2.5"
-                    android:background="@null"
-                    android:hint="@string/password_hint"
-                    android:inputType="textPassword"
-                    android:paddingRight="5dp"
-                    android:selectAllOnFocus="true"/>
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btn_sign_in"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/default_bkg"
-                android:text="@string/login"
-                android:textAllCaps="false"
-                android:textColor="@color/White"/>
-
-            <LinearLayout
-                android:id="@+id/lin_creat_account"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/no_account"/>
-
-                <TextView
-                    android:id="@+id/tv_creat_account"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:text="@string/cloud_title"
-                    android:textColor="@color/default_bkg"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/lin_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hi"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:id="@+id/tv_user_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:text="@string/cloud_title"
-                    android:textColor="@color/default_bkg"
-                    android:textSize="16sp"/>
-            </LinearLayout>
-
-<!--            <RelativeLayout
-                android:id="@+id/rl_auto_sync"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
-
-                <TextView
-                    android:id="@+id/tv_auto_sync"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="@string/auto_sync"/>
-
-                <Switch
-                    android:id="@+id/st_auto_sync"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="5dp"/>
-            </RelativeLayout>
-
-            <Button
-                android:id="@+id/btn_manual_sync"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/default_bkg"
-                android:text="@string/manual_sync"
-                android:textAllCaps="false"
-                android:textColor="@color/White"/>-->
-
-            <Button
-                android:id="@+id/btn_sign_out"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/button_red"
-                android:text="@string/sign_out"
-                android:textAllCaps="false"
-                android:textColor="@color/White"/>
-
-            <TextView
-                android:id="@+id/tv_delete_account"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="5dp"
-                android:text="@string/delete_account"
-                android:autoLink="all"
-                android:textColor="@color/default_bkg"
-                android:textSize="16sp"/>
-
-            <Button
-                android:id="@+id/btn_access_cloud"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/default_bkg"
-                android:text="@string/access_cloud_in_browser"
-                android:textAllCaps="false"
-                android:textColor="@color/White"/>
-        </LinearLayout>
-
         <RelativeLayout
             android:id="@+id/SettingsListReDevice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/lin_cloud"
             android:background="@drawable/list_item_bkg"
             android:clickable="true"
             android:paddingBottom="5dp"
@@ -281,7 +76,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
-            <com.viatom.azur.widget.SegmentedRadioGroup
+            <com.checkme.azur.widget.SegmentedRadioGroup
                 android:id="@+id/SettingsListUnitSegGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -311,7 +106,7 @@
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@drawable/radio_colors"
                     android:textSize="12sp"/>
-            </com.viatom.azur.widget.SegmentedRadioGroup>
+            </com.checkme.azur.widget.SegmentedRadioGroup>
         </RelativeLayout>
 
         <RelativeLayout
@@ -336,7 +131,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
-            <com.viatom.azur.widget.SegmentedRadioGroup
+            <com.checkme.azur.widget.SegmentedRadioGroup
                 android:id="@+id/SettingsListThermometerSegGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -364,7 +159,7 @@
                     android:text="  ℉  "
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@drawable/radio_colors"/>
-            </com.viatom.azur.widget.SegmentedRadioGroup>
+            </com.checkme.azur.widget.SegmentedRadioGroup>
         </RelativeLayout>
 
         <RelativeLayout

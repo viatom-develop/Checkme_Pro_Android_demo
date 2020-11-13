@@ -26,14 +26,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true">
 
-        <ImageView
-            android:id="@+id/WidgetActionbarBnCloud"
-            android:layout_width="60dp"
-            android:layout_height="45dp"
-            android:src="@drawable/cloud_offline"
-            android:layout_gravity="center_vertical"
-            android:visibility="gone" />
-
         <Button
             android:id="@+id/WidgetActionbarBnShare"
             android:layout_width="@dimen/WidgetActionBarButtonUserSize"

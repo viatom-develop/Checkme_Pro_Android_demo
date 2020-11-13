@@ -98,7 +98,7 @@
                 android:layout_weight="1"/>
         </LinearLayout> -->
         
-    <com.viatom.azur.monitor.widget.OxiValueView
+    <com.checkme.azur.monitor.widget.OxiValueView
         android:id="@+id/wg_oxi_val"
         android:layout_width="24dp"
         android:layout_height="130dp"

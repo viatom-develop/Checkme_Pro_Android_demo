@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CE.iml" filepath="$PROJECT_DIR$/CE.iml" />
-      <module fileurl="file://$PROJECT_DIR$/azurMobile/azurMobile.iml" filepath="$PROJECT_DIR$/azurMobile/azurMobile.iml" />
-      <module fileurl="file://$PROJECT_DIR$/blelib/blelib.iml" filepath="$PROJECT_DIR$/blelib/blelib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mPChartLib/mPChartLib.iml" filepath="$PROJECT_DIR$/mPChartLib/mPChartLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/azurMobile/CE.azurMobile.iml" filepath="$PROJECT_DIR$/.idea/modules/azurMobile/CE.azurMobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/blelib/CE.blelib.iml" filepath="$PROJECT_DIR$/.idea/modules/blelib/CE.blelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/CE.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/CE.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mPChartLib/CE.mPChartLib.iml" filepath="$PROJECT_DIR$/.idea/modules/mPChartLib/CE.mPChartLib.iml" />
     </modules>
   </component>
 </project>

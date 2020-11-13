@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./azurMobile/libs/nineoldandroids-2.4.0-2.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/azurMobile/libs/nineoldandroids-2.4.0-2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

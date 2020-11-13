@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ivbaranov:rxbluetooth2:2.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/335924eb9b6bf3f02a769ada78d67180/rxbluetooth2-2.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/335924eb9b6bf3f02a769ada78d67180/rxbluetooth2-2.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/335924eb9b6bf3f02a769ada78d67180/rxbluetooth2-2.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ivbaranov/rxbluetooth2/2.0.1/a0492938601d22c3caec2587bc66b62c6c0ea2b0/rxbluetooth2-2.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ivbaranov/rxbluetooth2/2.0.1/5bf5f93a57e344e9ec46a37f1f65bef01f4256c9/rxbluetooth2-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.viatom.newazur">
+    package="com.checkme.newazur">
 
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
@@ -32,13 +32,13 @@
     <application
         xmlns:tools="http://schemas.android.com/tools"
         tools:replace="android:allowBackup"
-        android:name="com.viatom.azur.element.CEApplication"
+        android:name="com.checkme.azur.element.CEApplication"
         android:allowBackup="false"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/AppBaseTheme">
         <activity
-            android:name="com.viatom.azur.activity.MainActivity"
+            android:name="com.checkme.azur.activity.MainActivity"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.FullScreen"
@@ -50,7 +50,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.viatom.azur.activity.ECGMain"
+            android:name="com.checkme.azur.activity.ECGMain"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name">
         </activity>
@@ -67,37 +67,37 @@
         </activity>
         -->
         <activity
-            android:name="com.viatom.azur.activity.ECGAnalyze"
+            android:name="com.checkme.azur.activity.ECGAnalyze"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name"
             android:screenOrientation="behind">
         </activity>
         <activity
-            android:name="com.viatom.azur.activity.DailyCheck"
+            android:name="com.checkme.azur.activity.DailyCheck"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.viatom.azur.activity.SPO2Main"
+            android:name="com.checkme.azur.activity.SPO2Main"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name">
         </activity>
         <activity
-            android:name="com.viatom.azur.activity.TempMain"
-            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
-            android:label="@string/app_name">
-        </activity>
-
-        <activity
-            android:name="com.viatom.azur.activity.BPActivity"
+            android:name="com.checkme.azur.activity.TempMain"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name">
         </activity>
 
         <activity
-            android:name="com.viatom.azur.activity.SLMMain"
+            android:name="com.checkme.azur.activity.BPActivity"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.checkme.azur.activity.SLMMain"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name">
         </activity>
@@ -107,24 +107,24 @@
         <!-- android:label="@string/app_name" > -->
         <!-- </activity> -->
         <activity
-            android:name="com.viatom.azur.activity.PedMain"
+            android:name="com.checkme.azur.activity.PedMain"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name">
         </activity>
         <activity
-            android:name="com.viatom.azur.activity.AboutCheckme"
+            android:name="com.checkme.azur.activity.AboutCheckme"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name">
         </activity>
         <activity
-            android:name="com.viatom.azur.activity.AboutApp"
+            android:name="com.checkme.azur.activity.AboutApp"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name">
 
         </activity>
 
         <activity
-            android:name="com.viatom.azur.activity.DisclaimerActivity"
+            android:name="com.checkme.azur.activity.DisclaimerActivity"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoTitle">
@@ -132,45 +132,45 @@
         </activity>
 
         <activity
-            android:name="com.viatom.azur.activity.DownloadActivity"
+            android:name="com.checkme.azur.activity.DownloadActivity"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name">
         </activity>
         <activity
-            android:name="com.viatom.azur.activity.SettingsActivity"
+            android:name="com.checkme.azur.activity.SettingsActivity"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name">
         </activity>
         <activity
-            android:name="com.viatom.azur.activity.SpotCheck"
+            android:name="com.checkme.azur.activity.SpotCheck"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.viatom.azur.monitor.ui.MonitorActivity"
+            android:name="com.checkme.azur.monitor.ui.MonitorActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
         </activity>
         <activity
-            android:name="com.viatom.azur.monitor.ui.MonitorActivityPlay"
+            android:name="com.checkme.azur.monitor.ui.MonitorActivityPlay"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
         </activity>
         <activity
-            android:name="com.viatom.azur.monitor.ui.MonitorDetaiListActivity"
+            android:name="com.checkme.azur.monitor.ui.MonitorDetaiListActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
         </activity>
 
         <activity
-            android:name="com.viatom.azur.activity.EntryActivity"
+            android:name="com.checkme.azur.activity.EntryActivity"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.FullScreen">
         </activity>
 
-        <service android:name="com.viatom.azur.bluetooth.BTUtils">
+        <service android:name="com.checkme.azur.bluetooth.BTUtils">
             <intent-filter>
 
                 <!-- 为该Service组件的intent-filter配置action -->
@@ -178,7 +178,7 @@
             </intent-filter>
         </service>
 
-        <service android:name="com.viatom.azur.bluetooth.BleUtils">
+        <service android:name="com.checkme.azur.bluetooth.BleUtils">
             <intent-filter>
 
                 <!-- 为该Service组件的intent-filter配置action -->
@@ -186,7 +186,7 @@
             </intent-filter>
         </service>
 
-        <service android:name="com.viatom.azur.monitor.bt.BTUtils">
+        <service android:name="com.checkme.azur.monitor.bt.BTUtils">
             <intent-filter>
 
                 <!-- 为该Service组件的intent-filter配置action -->
@@ -196,7 +196,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.viatom.azur.fileprovider"
+            android:authorities="com.checkme.azur.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
 

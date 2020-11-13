@@ -1,4 +1,4 @@
-package com.viatom.actionbarsherlock;
+package com.checkme.actionbarsherlock;
 
 import org.junit.Test;
 

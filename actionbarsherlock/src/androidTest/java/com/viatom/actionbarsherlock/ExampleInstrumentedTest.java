@@ -1,4 +1,4 @@
-package com.viatom.actionbarsherlock;
+package com.checkme.actionbarsherlock;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

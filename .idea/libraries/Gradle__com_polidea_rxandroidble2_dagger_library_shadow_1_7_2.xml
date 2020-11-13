@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.polidea.rxandroidble2:dagger-library-shadow:1.7.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.polidea.rxandroidble2/dagger-library-shadow/1.7.2/203bd2f311f352f5ada0b3a62bf7c6caaa16ab6b/dagger-library-shadow-1.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.polidea.rxandroidble2/dagger-library-shadow/1.7.2/87607d2738d542e5360c2ea525bbeda19cb05464/dagger-library-shadow-1.7.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.polidea.rxandroidble2/dagger-library-shadow/1.7.2/87607d2738d542e5360c2ea525bbeda19cb05464/dagger-library-shadow-1.7.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

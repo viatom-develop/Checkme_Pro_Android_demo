@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/ListBkg" >
 
-    <com.viatom.azur.widget.CommonViewPager
+    <com.checkme.azur.widget.CommonViewPager
         android:id="@+id/SLMViewPager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

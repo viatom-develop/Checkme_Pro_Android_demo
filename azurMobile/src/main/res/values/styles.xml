@@ -60,7 +60,7 @@
     </style>
 
     <!-- JProgressDialog样式，背景不变暗 -->
-    <style name="JDialogStyle" parent="android:attr/progressBarStyle">
+    <style name="JDialogStyle" parent="android:Widget.ProgressBar">
         <item name="android:windowBackground"> @android:color/transparent </item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
