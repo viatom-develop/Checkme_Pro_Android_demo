@@ -14,13 +14,6 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     -->
 
-    <supports-screens
-        android:anyDensity="true"
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:smallScreens="true"
-        android:xlargeScreens="true"/>
-
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="false"/>
