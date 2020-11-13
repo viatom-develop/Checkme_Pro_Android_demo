@@ -1,3 +1,3 @@
 # CE
-源动Check Mobile项目
-使用ndkVersion '16.0.4442984'编译
+Viatom Checkme Pro Android demo project
+**note:** ndkVersion requires version = '16.0.4442984'
