@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_rect_rw"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="Attention"
+        android:textColor="@color/SkyBlue"
+        android:textSize="@dimen/text_size_x_large"/>
+
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="This APP is not a medical APP, all data provided by the APP are only for informative and reference purpose, the data cannot be directly used for diagnostic or treatment purpose."
+        android:textColor="@color/Black_33"
+        android:textSize="@dimen/text_size_medium"/>
+
+
+    <CheckBox android:id="@+id/cb_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:button="@drawable/checkbox_style"
+        android:text="Do not remind again"
+        android:textColor="@color/Black_33"/>
+
+    <TextView
+        android:id="@+id/tv_btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="48dp"
+        android:paddingStart="48dp"
+        android:paddingRight="48dp"
+        android:paddingEnd="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="OK"
+        android:background="@drawable/selector_btn_positive_blue"
+        android:textColor="@color/White"/>
+
+
+</LinearLayout>

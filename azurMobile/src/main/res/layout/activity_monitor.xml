@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_show"
+    android:background="@color/Black" >
+
+    <RelativeLayout
+        android:id="@+id/rl_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/MonitorDarkBlue" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Name:"
+            android:visibility="gone"
+            android:textColor="@color/MonitorLightBlue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_checkme_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:text="--"
+            android:textColor="@color/MonitorLightBlue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_checkme_sn"
+            android:text="ID:"
+            android:visibility="gone"
+            android:textColor="@color/MonitorLightBlue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_id_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_id"
+            android:text="0123124"
+            android:visibility="gone"
+            android:textColor="@color/MonitorLightBlue"
+            android:textSize="20sp" />
+         <ImageButton 
+            android:id="@+id/tv_about_info"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@+id/iv_battery"
+            android:background="@drawable/about_info"
+            android:layout_centerVertical="true"
+            
+            android:layout_marginRight="10dp"
+            android:onClick="aboutinfo"
+            />
+        
+        <ImageView android:id="@+id/iv_battery"
+            android:layout_width="34dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/battery1"/>
+    </RelativeLayout>
+	 <!-- <LinearLayout
+        android:id="@+id/rl_components1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_status_bar"
+        android:divider="@drawable/component_sep_line"
+        android:orientation="vertical"
+        android:showDividers="middle" >
+        
+	     
+	     
+	     
+	     
+	      <LinearLayout
+        android:id="@+id/rl_components"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/rl_status_bar"
+        android:layout_weight="1"
+        android:divider="@drawable/component_sep_line"
+        android:orientation="vertical"
+        android:showDividers="middle" >
+    	</LinearLayout>
+    	<Button 
+    	    android:id="@+id/tv"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="0dp"
+    	    android:layout_weight="2"
+    	    android:layout_gravity="center"
+    	    android:onClick="test"
+    	    android:text="nihao"/>
+    </LinearLayout> -->
+    <LinearLayout
+        android:id="@+id/rl_components"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_status_bar"
+        android:divider="@drawable/component_sep_line"
+        android:orientation="vertical"
+        android:showDividers="middle" >
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_luzhi"
+        android:layout_below="@id/rl_status_bar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="gone"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/luzhi_start"
+            android:layout_gravity="center_vertical"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_luzhi_time"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/White"
+			android:layout_gravity="center_vertical"
+            android:text="00:00:00"/>
+        
+        
+    </LinearLayout>
+    
+</RelativeLayout>

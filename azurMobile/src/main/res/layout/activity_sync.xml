@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viatom.azur.activity.DownloadActivity">
+
+    <Button
+        android:id="@+id/btn_push"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Push to Checkme"
+        android:enabled="false"/>
+
+    <ProgressBar
+        android:id="@+id/push_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@id/btn_push"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:layout_below="@id/push_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/sync_section_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_user_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient List"
+                android:textSize="22sp"/>
+
+            <ImageButton
+                android:id="@+id/btn_refresh_user_list"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_user_list"
+                android:src="@drawable/ic_action_refresh"
+                android:background="@color/transparent"/>
+
+        </LinearLayout>
+
+
+
+        <ListView
+            android:id="@+id/user_list"
+            android:layout_below="@id/sync_section_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

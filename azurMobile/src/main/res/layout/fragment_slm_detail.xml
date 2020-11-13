@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ListBkg" >
+
+    <!-- Summary栏 -->
+
+    <RelativeLayout
+        android:id="@+id/SLMDetailReSummary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/SLMDetailSummaryH"
+        android:background="@drawable/border_list_item"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/SLMDetailReSummary_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/SLMDetailTextTotalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/SLMDetailSummaryTextMarginLeft"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/SLMDetailSummaryTextSize" />
+
+            <TextView
+                android:id="@+id/SLMDetailTextLowOxygenTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/SLMDetailTextTotalTime"
+                android:layout_marginLeft="@dimen/SLMDetailSummaryTextMarginLeft"
+                android:layout_marginTop="@dimen/SLMDetailSummaryTextMarginTop"
+                android:gravity="center"
+                android:text="low_oxygen_time"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/SLMDetailSummaryTextSize" />
+
+            <TextView
+                android:id="@+id/SLMDetailTextAverageOxygen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/SLMDetailTextLowOxygenTime"
+                android:layout_marginLeft="@dimen/SLMDetailSummaryTextMarginLeft"
+                android:layout_marginTop="@dimen/SLMDetailSummaryTextMarginTop"
+                android:gravity="center"
+                android:text="average"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/SLMDetailSummaryTextSize" />
+
+            <TextView
+                android:id="@+id/SLMDetailTextMinOxygen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/SLMDetailSummaryTextMarginLeft"
+                android:layout_below="@id/SLMDetailTextAverageOxygen"
+                android:gravity="center"
+                android:text="min_oxygen"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/SLMDetailSummaryTextSize" />
+
+            <TextView
+                android:id="@+id/SLMDetailTextResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:layout_below="@id/SLMDetailTextMinOxygen"
+                android:layout_toLeftOf="@+id/SLMDetailImgResult"
+                android:layout_marginLeft="@dimen/SLMDetailSummaryTextMarginLeft"
+                android:layout_marginTop="@dimen/SLMDetailSummaryTextMarginTop"
+                android:gravity="left"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/SLMDetailSummaryTextSize"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/SLMDetailImgResult"
+                android:layout_width="@dimen/SLMDetailSummaryImgWH"
+                android:layout_height="@dimen/SLMDetailSummaryImgWH"
+                android:layout_alignBottom="@id/SLMDetailTextResult"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/SLMDetailSummaryImgMarginRight"
+                android:src="@drawable/none"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SLMDetailReChartSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SLMDetailReSummary"
+        android:layout_marginBottom="@dimen/SLMDetailChartMarginBottom"
+        android:layout_marginLeft="@dimen/SLMDetailChartMarginLR"
+        android:layout_marginRight="@dimen/SLMDetailChartMarginLR"
+        android:background="@drawable/border_list_item"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/SLMDetailPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" 
+           	android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/SLMDetailLinearChart"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.viatom.azur.widget.SLMChart
+                android:id="@+id/SLMDetailChartSPO2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            
+            <com.viatom.azur.widget.SLMChart
+                android:id="@+id/SLMDetailChartPR"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/SLMDetailSeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/SLMDetailSeekBarMarginLR"
+            android:layout_marginRight="@dimen/SLMDetailSeekBarMarginLR" 
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <!-- 底部导航栏 -->
+
+</RelativeLayout>

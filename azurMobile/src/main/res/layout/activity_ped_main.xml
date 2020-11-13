@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ListBkg" 
+    android:id="@+id/PedMainReMain">
+
+    <RelativeLayout
+        android:id="@+id/PedMainLiearList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/PedMainLinearListMarginLR"
+        android:layout_marginRight="@dimen/PedMainLinearListMarginLR"
+        android:layout_marginTop="@dimen/PedMainLinearListMarginTB"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/PedMainListPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        
+        <ImageView android:id="@+id/ImgNoInfo"
+            android:layout_width="@dimen/ImgNoInfoSize"
+            android:layout_height="@dimen/ImgNoInfoSize"
+            android:src="@drawable/no_record"
+            android:layout_marginTop="130dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/PedMainList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/PedMainListMarginLR"
+            android:layout_marginRight="@dimen/PedMainListMarginLR"
+            android:divider="@null"
+            android:dividerHeight="@dimen/PedMainListDividerH" />
+    </RelativeLayout>
+
+</RelativeLayout>

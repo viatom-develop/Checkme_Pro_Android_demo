@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 系列 -->
+    <string name="checkme_pro">Checkme Pro</string>
+    <string name="checkme_plus">Checkme Plus</string>
+    <string name="checkme_lite">Checkme Lite</string>
+    <string name="checkme_pod">Checkme Pod</string>
+
+    <!-- 标题 -->
+    <string name="app_name">Check Mobile</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_dlc">Daily Check</string>
+    <string name="title_ecg">ECG Recorder</string>
+    <string name="title_oximeter">Pulse Oximeter</string>
+    <string name="title_temp">Thermometer</string>
+    <string name="title_bp">NIBP</string>
+    <string name="title_slm">Sleep Monitor</string>
+    <string name="title_ped">Pedometer</string>
+    <!--
+    <string name="title_device">Device Update</string>
+    -->
+    <string name="title_device">My Device</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_download">Download</string>
+    <string name="title_about">About</string>
+
+    <!-- 显示 -->
+
+    <string name="delete_account">Delete my account</string>
+    <string name="spo2">SpO<sub><font size="5">2</font ></sub>&#58;</string>
+    <string name="hr">HR</string>
+    <string name="st">ST</string>
+    <string name="qt">QT</string>
+    <string name="qtc">QTc</string>
+    <string name="qrs">QRS</string>
+    <string name="ecg">ECG</string>
+    <string name="pi">PI</string>
+    <string name="pr">PR</string>
+    <string name="bp">BP</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="seperator"><u>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</u></string>
+    <string name="drops">drops&#058;&#160;</string>
+    <string name="drops_2">drops&#058;&#160;</string>
+    <string name="stat">STAT&#046;&#160;</string>
+    <string name="name">Name&#058;&#160;</string>
+    <string name="gender">Gender&#058;&#160;</string>
+    <string name="date_of_birth">Date of birth&#058;&#160;</string>
+    <string name="remarks">Remarks&#058;&#160;</string>
+    <string name="measuring_mode">Measuring Mode&#058;&#160;</string>
+    <string name="date_time">Date/Time&#058;&#160;</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="oxygen_saturation">Oxygen Saturation</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="heart_rate_2">Heart Rate&#058;&#160;</string>
+    <string name="oxygen_saturation_2">Oxygen Saturation&#058;&#160;</string>
+    <string name="blood_pressure_2">Blood Pressure&#058;&#160;</string>
+    <string name="series">Series&#058;&#160;</string>
+    <string name="version">Version&#058;&#160;</string>
+    <string name="version_label">Version</string>
+    <string name="sn">SN&#058;&#160;</string>
+    <string name="result">Result&#058;&#160;</string>
+    <string name="lowest">Lowest</string>
+    <string name="average">Average</string>
+    <string name="lowest_2">Lowest&#058;&#160;</string>
+    <string name="average_2">Average&#058;&#160;</string>
+    <string name="total_duration">Total duration</string>
+    <string name="total_duration_2">Total duration&#058;&#160;</string>
+    <string name="no_data">No Data</string>
+    <string name="h">h</string>
+    <string name="m">m</string>
+    <string name="s">s</string>
+    <string name="steps">Steps</string>
+    <string name="month_1">Jan</string>
+    <string name="month_2">Feb</string>
+    <string name="month_3">Mar</string>
+    <string name="month_4">Apr</string>
+    <string name="month_5">May</string>
+    <string name="month_6">Jun</string>
+    <string name="month_7">Jul</string>
+    <string name="month_8">Aug</string>
+    <string name="month_9">Sep</string>
+    <string name="month_10">Oct</string>
+    <string name="month_11">Nov</string>
+    <string name="month_12">Dec</string>
+    <string name="report">Report</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+
+    <!-- 提示 -->
+    <string name="unknow_device">Unknow device</string>
+    <string name="update">Update</string>
+    <string name="update_failed">Update failed</string>
+    <string name="version_up_to_date">Your version is up to date</string>
+    <string name="cancel">Cancel</string>
+    <string name="change_language">Change language</string>
+    <string name="select_language">Select a language</string>
+    <string name="stop_update">Really want to stop the update?</string>
+    <string name="downloading">Downloading...</string>
+    <string name="updating">Updating...</string>
+    <string name="erase_datas">Update will erase all data</string>
+    <string name="update_in_offline">Can not update in Offline mode</string>
+    <string name="update_restart">Update successfully, application will restart</string>
+    <string name="restart">Restart</string>
+    <string name="notice">Notice</string>
+    <string name="unit">Unit</string>
+    <string name="metric">Metric</string>
+    <string name="british">British</string>
+    <string name="change_device_offline">Can not change device when you connecting a Checkme</string>
+    <string name="all_right_reserved">All right reserved</string>
+    <string name="down_in_offline">Can not download data in Offline mode.</string>
+    <string name="wait_last_downloading">Please wait until current download is completed.</string>
+    <string name="no_file">No record found</string>
+    <string name="time_out">Timeout.</string>
+    <string name="loading">Loading...</string>
+    <string name="turn_on_bt">Please enable your Bluetooth</string>
+    <string name="turn_on">Enable</string>
+    <string name="offline">Offline</string>
+    <string name="exit">Exit</string>
+    <string name="no_device">No device, search again?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="warning">Warning...</string>
+    <string name="connect_failed">Connect failed</string>
+    <string name="choose_device">Choose a device</string>
+    <string name="searching">Searching device...</string>
+    <string name="connecting">Connecting...</string>
+    <string name="network_not_available">Network is not available</string>
+    <string name="update_checkme">Please update your Checkme</string>
+    <string name="view_offline_data">View Offline data</string>
+    <string name="new_app_available">New Checkme Mobile is available, whether to update it?</string>
+    <string name="update_successfully">Update successfully</string>
+    <string name="download_successfully">Download Successfully</string>
+    <string name="download_failed">Download failed</string>
+    <string name="press_again_exit">Press again to exit</string>
+    <string name="no_user_info">No information</string>
+    <string name="save_to_album">Save to Album</string>
+    <string name="share">Share</string>
+    <string name="save_successfully">Save successfully</string>
+    <string name="save_failed">Save failed</string>
+    <string name="downloading_app">Downloading the latest App...</string>
+    <string name="clearS">Clear caches successed</string>
+    <string name="clear">Really want to erase all Data ?</string>
+    <string name="clearname">Clear cache</string>
+    <string name="tv_dialog_title_no_device_found">Please turn on the Bluetooth of your Checkme device, or enter Offline mode</string>
+    <string name="tv_dialog_title_choose_device">Choose a device</string>
+    <string name="tv_device_update_delete_all_data">Do you want to delete all data on the Checkme?</string>
+    <string name="tv_device_update_really_delete_all_data">Do you really want to delete it?</string>
+    <string name="tv_dialog_msg_location_service">Do you want to enable location service?It will discover device more quickly!</string>
+
+    <string name="i_agree">I Agree</string>
+    <string name="policy_dialog_title">Privacy Policy</string>
+    <string name="policy_declare">At Viatom we take privacy seriously. Before we get started, we would like you to understand our policies.</string>
+    <string name="policy_confirm">I agree <a href="https://cloud.viatomtech.com/terms">Viatom Terms</a> and <a href="https://cloud.viatomtech.com/privacy">Privacy Policy</a> in particular.</string>
+    <string name="policy_reconfirm">I consent to the collection, processing and disclosure of my de-identified heart activity data and related health information by Viatom as described in the <a href="https://cloud.viatomtech.com/privacy">Privacy Policy</a>. I have the right to withdraw my consent at any time, as described in the <a href="https://cloud.viatomtech.com/privacy">Privacy Policy</a>.</string>
+
+    <!-- 诊断结果 -->
+    <string name="ecg_result_0">Regular ECG Rhythm</string>
+    <string name="ecg_result_1">High Heart Rate</string>
+    <string name="ecg_result_2">Low Heart Rate</string>
+    <string name="ecg_result_3">High QRS Value</string>
+    <string name="ecg_result_4">High ST Value</string>
+    <string name="ecg_result_5">Low ST Value</string>
+    <string name="ecg_result_6">Irregular ECG Rhythm</string>
+    <string name="ecg_result_7">Suspected Premature Beat</string>
+    <string name="ecg_result_8">Unable to Analyze</string>
+    <string name="spo2_result_0">Normal Blood Oxygen</string>
+    <string name="spo2_result_1">Low Blood Oxygen</string>
+    <string name="spo2_result_2">Unable to Analyze</string>
+    <string name="refer">refer to&#160;</string>
+    <string name="bp_sys">BPsys&#160;&#045;&#160;</string>
+    <string name="slm_result_0">No abnormalities detected</string>
+    <string name="slm_result_1">Blood Oxygen drop detected</string>
+    <string name="slm_result_2">Unable to Analyze</string>
+    <string name="bandwidth">Bandwidth&#058;&#160;</string>
+    <string name="normal">normal</string>
+    <string name="wide">wide</string>
+    <string name="unknow_bandwidth">Unknow bandwidth</string>
+
+    <!--BP-->
+    <string name="bp_sys_label">SYS</string>
+    <string name="bp_dia">DIA</string>
+    <string name="bp_pr">PR</string>
+    <string name="bp_unit">mmHg</string>
+    <string name="pr_unit">/min</string>
+
+
+    <!-- spot check -->
+    <string name="title_spot_check">Spot Check</string>
+    <string name="temp">Temperature</string>
+    <string name="temp_1">Temperature&#058;&#160;</string>
+    <string name="no_ecg">ECG not applicable</string>
+    <string name="no_ecg_1">not applicable</string>
+    <string name="no_spo2">not applicable</string>
+    <string name="no_temp">Temperature not applicable</string>
+    <string name="no_temp_1">not applicable</string>
+    <string name="patient_id">Patient ID&#058;&#160;</string>
+    <string name="age">Age&#058;&#160;</string>
+
+    <!--new version String-->
+    <string name="download_data">New records ready to download from device.</string>
+    <string name="later">Later</string>
+    <string name="download">Download</string>
+    <string name="prompt_email">Email&#058;&#160;</string>
+    <string name="prompt_password">Password&#058;&#160;</string>
+    <string name="no_account">or create an account at</string>
+    <string name="login">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">The min length is 6</string>
+    <string name="cloud_title">Cloud</string>
+    <string name="email_hint">abc@example.com</string>
+    <string name="password_hint">*********</string>
+    <string name="hi">Hi,</string>
+    <string name="auto_sync">Auto Sync</string>
+    <string name="manual_sync">Manual Sync</string>
+    <string name="access_cloud_in_browser">Access cloud in browser</string>
+    <string name="choose_a_browser">Choose a browser</string>
+    <string name="login_failed">Sign in failed</string>
+    <string name="cm">cm</string>
+    <string name="kg">kg</string>
+
+    <string name="tv_disclaimer">Disclaimer</string>
+    <string name="tv_disclaimer_content">This Application and any related Third Party Functionality are not medical devices and do not provide medical advice. It should not be used to prevent, diagnose or treat any medical condition. It is not a substitute for professional medical advice, diagnosis or treatment. It is intended for informational and educational purposes only. Call your doctor to receive medical advice. If you think you may have a medical emergency, immediately call your doctor.
+    </string>
+
+    <string name="tv_about_this_app">About This App</string>
+    <string name="tv_about_app_content">This APP is intended to be used by adults at home for personal vital signs data storage purpose and for history tracking purpose.\nThis APP is not intended for diagnosis purpose.</string>
+    <!--monitor-->
+
+</resources>

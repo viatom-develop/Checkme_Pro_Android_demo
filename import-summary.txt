@@ -1,0 +1,296 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From AzurMobile:
+* ._.DS_Store
+* doc\
+* doc\.DS_Store
+* doc\._.DS_Store
+* doc\allclasses-frame.html
+* doc\allclasses-noframe.html
+* doc\com\
+* doc\com\viatom\
+* doc\com\viatom\azur\
+* doc\com\viatom\azur\bluetooth\
+* doc\com\viatom\azur\bluetooth\BTConnectListener.html
+* doc\com\viatom\azur\bluetooth\BTConstant.html
+* doc\com\viatom\azur\bluetooth\BTUtils.BTBinder.html
+* doc\com\viatom\azur\bluetooth\BTUtils.ConnectThread.html
+* doc\com\viatom\azur\bluetooth\BTUtils.DelInfoThread.html
+* doc\com\viatom\azur\bluetooth\BTUtils.GetInfoThread.html
+* doc\com\viatom\azur\bluetooth\BTUtils.PingThread.html
+* doc\com\viatom\azur\bluetooth\BTUtils.ReadFileThread.html
+* doc\com\viatom\azur\bluetooth\BTUtils.ReadThread.html
+* doc\com\viatom\azur\bluetooth\BTUtils.ReadThreadListener.html
+* doc\com\viatom\azur\bluetooth\BTUtils.WriteFileThread.html
+* doc\com\viatom\azur\bluetooth\BTUtils.html
+* doc\com\viatom\azur\bluetooth\DelInfoAckPkg.html
+* doc\com\viatom\azur\bluetooth\DelInfoPkg.html
+* doc\com\viatom\azur\bluetooth\EndReadAckPkg.html
+* doc\com\viatom\azur\bluetooth\EndReadPkg.html
+* doc\com\viatom\azur\bluetooth\EndWriteAckPkg.html
+* doc\com\viatom\azur\bluetooth\EndWritePkg.html
+* doc\com\viatom\azur\bluetooth\GetInfoAckPkg.html
+* doc\com\viatom\azur\bluetooth\GetInfoPkg.html
+* doc\com\viatom\azur\bluetooth\GetInfoThreadListener.html
+* doc\com\viatom\azur\bluetooth\PingAckPkg.html
+* doc\com\viatom\azur\bluetooth\PingPkg.html
+* doc\com\viatom\azur\bluetooth\PingThreadListener.html
+* doc\com\viatom\azur\bluetooth\ReadContentAckPkg.html
+* doc\com\viatom\azur\bluetooth\ReadContentPkg.html
+* doc\com\viatom\azur\bluetooth\ReadFileListener.html
+* doc\com\viatom\azur\bluetooth\StartReadAckPkg.html
+* doc\com\viatom\azur\bluetooth\StartReadPkg.html
+* doc\com\viatom\azur\bluetooth\StartWriteAckPkg.html
+* doc\com\viatom\azur\bluetooth\StartWritePkg.html
+* doc\com\viatom\azur\bluetooth\WriteContentAckPkg.html
+* doc\com\viatom\azur\bluetooth\WriteContentPkg.html
+* doc\com\viatom\azur\bluetooth\WriteFileListener.html
+* doc\com\viatom\azur\bluetooth\class-use\
+* doc\com\viatom\azur\bluetooth\class-use\BTConnectListener.html
+* doc\com\viatom\azur\bluetooth\class-use\BTConstant.html
+* doc\com\viatom\azur\bluetooth\class-use\BTUtils.BTBinder.html
+* doc\com\viatom\azur\bluetooth\class-use\BTUtils.ConnectThread.html
+* doc\com\viatom\azur\bluetooth\class-use\BTUtils.DelInfoThread.html
+* doc\com\viatom\azur\bluetooth\class-use\BTUtils.GetInfoThread.html
+* doc\com\viatom\azur\bluetooth\class-use\BTUtils.PingThread.html
+* doc\com\viatom\azur\bluetooth\class-use\BTUtils.ReadFileThread.html
+* doc\com\viatom\azur\bluetooth\class-use\BTUtils.ReadThread.html
+* doc\com\viatom\azur\bluetooth\class-use\BTUtils.ReadThreadListener.html
+* doc\com\viatom\azur\bluetooth\class-use\BTUtils.WriteFileThread.html
+* doc\com\viatom\azur\bluetooth\class-use\BTUtils.html
+* doc\com\viatom\azur\bluetooth\class-use\DelInfoAckPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\DelInfoPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\EndReadAckPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\EndReadPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\EndWriteAckPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\EndWritePkg.html
+* doc\com\viatom\azur\bluetooth\class-use\GetInfoAckPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\GetInfoPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\GetInfoThreadListener.html
+* doc\com\viatom\azur\bluetooth\class-use\PingAckPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\PingPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\PingThreadListener.html
+* doc\com\viatom\azur\bluetooth\class-use\ReadContentAckPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\ReadContentPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\ReadFileListener.html
+* doc\com\viatom\azur\bluetooth\class-use\StartReadAckPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\StartReadPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\StartWriteAckPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\StartWritePkg.html
+* doc\com\viatom\azur\bluetooth\class-use\WriteContentAckPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\WriteContentPkg.html
+* doc\com\viatom\azur\bluetooth\class-use\WriteFileListener.html
+* doc\com\viatom\azur\bluetooth\package-frame.html
+* doc\com\viatom\azur\bluetooth\package-summary.html
+* doc\com\viatom\azur\bluetooth\package-tree.html
+* doc\com\viatom\azur\bluetooth\package-use.html
+* doc\com\viatom\azur\measurement\
+* doc\com\viatom\azur\measurement\BPCalItem.html
+* doc\com\viatom\azur\measurement\CommonItem.html
+* doc\com\viatom\azur\measurement\DailyCheckItem.html
+* doc\com\viatom\azur\measurement\ECGInnerItem.html
+* doc\com\viatom\azur\measurement\ECGItem.html
+* doc\com\viatom\azur\measurement\MeasurementConstant.html
+* doc\com\viatom\azur\measurement\PedItem.html
+* doc\com\viatom\azur\measurement\SLMInnerItem.html
+* doc\com\viatom\azur\measurement\SLMItem.html
+* doc\com\viatom\azur\measurement\SPO2Item.html
+* doc\com\viatom\azur\measurement\SpotCheckItem.html
+* doc\com\viatom\azur\measurement\SpotUser.SpotUserInfo.html
+* doc\com\viatom\azur\measurement\SpotUser.html
+* doc\com\viatom\azur\measurement\TempItem.html
+* doc\com\viatom\azur\measurement\User.UserInfo.html
+* doc\com\viatom\azur\measurement\User.html
+* doc\com\viatom\azur\measurement\class-use\
+* doc\com\viatom\azur\measurement\class-use\BPCalItem.html
+* doc\com\viatom\azur\measurement\class-use\CommonItem.html
+* doc\com\viatom\azur\measurement\class-use\DailyCheckItem.html
+* doc\com\viatom\azur\measurement\class-use\ECGInnerItem.html
+* doc\com\viatom\azur\measurement\class-use\ECGItem.html
+* doc\com\viatom\azur\measurement\class-use\MeasurementConstant.html
+* doc\com\viatom\azur\measurement\class-use\PedItem.html
+* doc\com\viatom\azur\measurement\class-use\SLMInnerItem.html
+* doc\com\viatom\azur\measurement\class-use\SLMItem.html
+* doc\com\viatom\azur\measurement\class-use\SPO2Item.html
+* doc\com\viatom\azur\measurement\class-use\SpotCheckItem.html
+* doc\com\viatom\azur\measurement\class-use\SpotUser.SpotUserInfo.html
+* doc\com\viatom\azur\measurement\class-use\SpotUser.html
+* doc\com\viatom\azur\measurement\class-use\TempItem.html
+* doc\com\viatom\azur\measurement\class-use\User.UserInfo.html
+* doc\com\viatom\azur\measurement\class-use\User.html
+* doc\com\viatom\azur\measurement\package-frame.html
+* doc\com\viatom\azur\measurement\package-summary.html
+* doc\com\viatom\azur\measurement\package-tree.html
+* doc\com\viatom\azur\measurement\package-use.html
+* doc\com\viatom\azur\utils\
+* doc\com\viatom\azur\utils\CRCUtils.html
+* doc\com\viatom\azur\utils\CommonItemFilter.html
+* doc\com\viatom\azur\utils\FileCoder.html
+* doc\com\viatom\azur\utils\FileDriver.html
+* doc\com\viatom\azur\utils\FileUtils.html
+* doc\com\viatom\azur\utils\LogUtils.html
+* doc\com\viatom\azur\utils\MsgUtils.html
+* doc\com\viatom\azur\utils\TimeComparator.html
+* doc\com\viatom\azur\utils\class-use\
+* doc\com\viatom\azur\utils\class-use\CRCUtils.html
+* doc\com\viatom\azur\utils\class-use\CommonItemFilter.html
+* doc\com\viatom\azur\utils\class-use\FileCoder.html
+* doc\com\viatom\azur\utils\class-use\FileDriver.html
+* doc\com\viatom\azur\utils\class-use\FileUtils.html
+* doc\com\viatom\azur\utils\class-use\LogUtils.html
+* doc\com\viatom\azur\utils\class-use\MsgUtils.html
+* doc\com\viatom\azur\utils\class-use\TimeComparator.html
+* doc\com\viatom\azur\utils\package-frame.html
+* doc\com\viatom\azur\utils\package-summary.html
+* doc\com\viatom\azur\utils\package-tree.html
+* doc\com\viatom\azur\utils\package-use.html
+* doc\constant-values.html
+* doc\deprecated-list.html
+* doc\help-doc.html
+* doc\index-files\
+* doc\index-files\index-1.html
+* doc\index-files\index-10.html
+* doc\index-files\index-11.html
+* doc\index-files\index-12.html
+* doc\index-files\index-13.html
+* doc\index-files\index-14.html
+* doc\index-files\index-15.html
+* doc\index-files\index-16.html
+* doc\index-files\index-17.html
+* doc\index-files\index-2.html
+* doc\index-files\index-3.html
+* doc\index-files\index-4.html
+* doc\index-files\index-5.html
+* doc\index-files\index-6.html
+* doc\index-files\index-7.html
+* doc\index-files\index-8.html
+* doc\index-files\index-9.html
+* doc\index.html
+* doc\overview-frame.html
+* doc\overview-summary.html
+* doc\overview-tree.html
+* doc\package-list
+* doc\script.js
+* doc\serialized-form.html
+* doc\stylesheet.css
+* ic_launcher-web.png
+* proguard-project.txt
+From MPChartLib:
+* .gitignore
+* build.gradle
+* ic_launcher-web.png
+* pom.xml
+* proguard-project.txt
+From SwipeMenuListView:
+* SwipeMenuListView.iml
+* proguard-project.txt
+From library:
+* LICENSE.txt
+* build.gradle
+* library.iml
+* pom.xml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:20.0.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+actionbarsherlock =>
+    com.actionbarsherlock:actionbarsherlock:4.4.0@aar
+    com.android.support:support-v4:20.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In MPChartLib:
+* AndroidManifest.xml => mPChartLib\src\main\AndroidManifest.xml
+* assets\ => mPChartLib\src\main\assets
+* libs\nineoldandroids-2.4.0-2.jar => mPChartLib\libs\nineoldandroids-2.4.0-2.jar
+* res\ => mPChartLib\src\main\res
+* src\ => mPChartLib\src\main\java\
+In SwipeMenuListView:
+* AndroidManifest.xml => swipeMenuListView\src\main\AndroidManifest.xml
+* assets\ => swipeMenuListView\src\main\assets
+* res\ => swipeMenuListView\src\main\res\
+* src\ => swipeMenuListView\src\main\java\
+In library:
+* AndroidManifest.xml => library\src\main\AndroidManifest.xml
+* assets\ => library\src\main\assets
+* res\ => library\src\main\res\
+* src\ => library\src\main\java\
+In AzurMobile:
+* ._.DS_Store => ._.ds_store
+* AndroidManifest.xml => azurMobile\src\main\AndroidManifest.xml
+* assets\ => azurMobile\src\main\assets
+* jni\ => azurMobile\src\main\jni\
+* libs\umeng-analytics-v5.2.4.jar => azurMobile\libs\umeng-analytics-v5.2.4.jar
+* lint.xml => azurMobile\lint.xml
+* res\ => azurMobile\src\main\res\
+* src\ => azurMobile\src\main\java\
+* src\._.DS_Store => azurMobile\src\main\resources\._.DS_Store
+* src\.DS_Store => azurMobile\src\main\resources\.DS_Store
+* src\com\._.DS_Store => azurMobile\src\main\resources\com\._.DS_Store
+* src\com\.DS_Store => azurMobile\src\main\resources\com\.DS_Store
+* src\com\viatom\._.DS_Store => azurMobile\src\main\resources\com\viatom\._.DS_Store
+* src\com\viatom\.DS_Store => azurMobile\src\main\resources\com\viatom\.DS_Store
+* src\com\viatom\azur\._.DS_Store => azurMobile\src\main\resources\com\viatom\azur\._.DS_Store
+* src\com\viatom\azur\.DS_Store => azurMobile\src\main\resources\com\viatom\azur\.DS_Store
+* src\com\viatom\azur\bluetooth\._.DS_Store => azurMobile\src\main\resources\com\viatom\azur\bluetooth\._.DS_Store
+* src\com\viatom\azur\bluetooth\.DS_Store => azurMobile\src\main\resources\com\viatom\azur\bluetooth\.DS_Store
+* src\com\viatom\azur\element\._.DS_Store => azurMobile\src\main\resources\com\viatom\azur\element\._.DS_Store
+* src\com\viatom\azur\element\.DS_Store => azurMobile\src\main\resources\com\viatom\azur\element\.DS_Store
+* src\com\viatom\azur\tools\._.DS_Store => azurMobile\src\main\resources\com\viatom\azur\tools\._.DS_Store
+* src\com\viatom\azur\tools\.DS_Store => azurMobile\src\main\resources\com\viatom\azur\tools\.DS_Store
+* src\com\viatom\azur\widget\._.DS_Store => azurMobile\src\main\resources\com\viatom\azur\widget\._.DS_Store
+* src\com\viatom\azur\widget\.DS_Store => azurMobile\src\main\resources\com\viatom\azur\widget\.DS_Store
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

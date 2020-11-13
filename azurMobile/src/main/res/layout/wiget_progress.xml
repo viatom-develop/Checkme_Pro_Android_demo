@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_pb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="--"
+            android:textSize="20sp" />
+
+        <com.viatom.azur.widget.HorizontalProgressBarWithNumber
+            android:id="@+id/pb_num"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="@color/Gray"
+            app:progress_reached_bar_height="20dp"
+            app:progress_reached_color="@color/default_bkg"
+            app:progress_text_color="@color/default_bkg"
+            app:progress_text_size="20sp"
+            app:progress_text_visibility="invisible"
+            app:progress_unreached_bar_height="20dp"
+            app:progress_unreached_color="#CCCCCC" />
+    </LinearLayout>
+
+</RelativeLayout>

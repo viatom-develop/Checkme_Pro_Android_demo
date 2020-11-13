@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ListBkg" >
+
+    <LinearLayout
+        android:id="@+id/SLMDetailLinearChart"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:layout_marginTop="@dimen/SLMDetailChartMarginBottom"
+        android:layout_marginBottom="@dimen/SLMDetailChartMarginBottom"
+        android:layout_marginLeft="@dimen/SLMDetailChartMarginLR"
+        android:layout_marginRight="@dimen/SLMDetailChartMarginLR"
+        android:background="@drawable/border_list_item">
+
+        <com.viatom.azur.widget.SLMChart
+            android:id="@+id/SLMDetailChartSPO2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.viatom.azur.widget.SLMChart
+            android:id="@+id/SLMDetailChartPR"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

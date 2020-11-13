@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ListSLMReMain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bkg" >
+
+    <RelativeLayout
+        android:id="@+id/ListSLMReMain_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="@dimen/ListSLMReMainPaddingTB"
+        android:paddingLeft="@dimen/ListSLMReMainPaddingLR"
+        android:paddingRight="@dimen/ListSLMReMainPaddingLR"
+        android:paddingTop="@dimen/ListSLMReMainPaddingTB" >
+
+        <LinearLayout
+            android:id="@+id/ListSLMLinearDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ListSLMTextTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/ListSLMTextTimeSize" />
+
+            <TextView
+                android:id="@+id/ListSLMTextDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/ListSLMTextDateTimeDis"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/ListSLMTextDateSize" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ListSLMImgResult"
+            android:layout_width="@dimen/ListSLMImgResultWH"
+            android:layout_height="@dimen/ListSLMImgResultWH"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ListSLMImgResultMarginLeft"
+            android:layout_toRightOf="@id/ListSLMLinearDate" />
+
+        <Button
+            android:id="@+id/ListSLMBnAct"
+            android:layout_width="@dimen/ListSLMBnActW"
+            android:layout_height="@dimen/ListSLMBnActH"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ListSLMBnActMarginLeft"
+            android:background="@drawable/button_download"
+            android:clickable="false"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/ListSLMPro"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/ListSLMProH"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/progress_bar"
+        android:scaleType="center" />
+
+</RelativeLayout>

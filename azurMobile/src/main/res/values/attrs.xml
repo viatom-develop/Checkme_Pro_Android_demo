@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="progress" format="integer"/>
+    <attr name="maxProgress" format="integer"/>
+    <attr name="lineHeight" format="dimension"/>
+    <attr name="indicator" format="reference"/>
+
+    <declare-styleable name="CustomView">
+        <attr name="progress"/>
+        <attr name="maxProgress"/>
+        <attr name="indicator"/>
+        <attr name="lineHeight"/>
+    </declare-styleable>
+</resources>

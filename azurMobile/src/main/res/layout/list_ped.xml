@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bkg"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="@dimen/ListPedReMainPaddingTB"
+    android:paddingLeft="@dimen/ListPedReMainPaddingLR"
+    android:paddingRight="@dimen/ListPedReMainPaddingLR"
+    android:paddingTop="@dimen/ListPedReMainPaddingTB" >
+
+    <RelativeLayout
+        android:id="@+id/ListPedReUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/ListPedLinearDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ListPedTextTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="20:07:43"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/ListPedTextTimeSize" />
+
+            <TextView
+                android:id="@+id/ListPedTextDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/ListPedTextDateTimeDis"
+                android:text="13-Aug-2014"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/ListPedTextDateSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ListPedLinearUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ListPedTextSteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="177steps"
+                android:textSize="@dimen/ListPedTextStepsSize" />
+
+            <TextView
+                android:id="@+id/ListPedTextDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="10.1km"
+                android:textSize="@dimen/ListPedTextDisSize" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/listPedSeperator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ListPedReUp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/Gray" />
+
+    <RelativeLayout
+        android:id="@+id/ListPedReDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listPedSeperator" >
+
+        <LinearLayout
+            android:id="@+id/ListPedLinearCalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/ListPedImgResultWH"
+                android:layout_height="@dimen/ListPedImgResultWH"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/calorie" />
+
+            <TextView
+                android:id="@+id/ListPedTextCalorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/ListPedTextResultMarginLeft"
+                android:text="0.25Kcal"
+                android:textSize="@dimen/ListPedTextResultSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ListPedLinearFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ListPedLinearCalorie"
+            android:layout_below="@id/ListPedLinearCalorie"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/ListPedImgResultWH"
+                android:layout_height="@dimen/ListPedImgResultWH"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/fat" />
+
+            <TextView
+                android:id="@+id/ListPedTextFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/ListPedTextResultMarginLeft"
+                android:text="10.04g"
+                android:textSize="@dimen/ListPedTextResultSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ListPedLinearSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/ListPedLinearCalorie"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/ListPedImgResultWH"
+                android:layout_height="@dimen/ListPedImgResultWH"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/speed" />
+
+            <TextView
+                android:id="@+id/ListPedTextSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/ListPedTextResultMarginLeft"
+                android:text="5.2km/h"
+                android:textSize="@dimen/ListPedTextResultSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ListPedLinearTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ListPedLinearSpeed"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ListPedLinearSpeed"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/ListPedImgResultWH"
+                android:layout_height="@dimen/ListPedImgResultWH"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/timer" />
+
+            <TextView
+                android:id="@+id/ListPedTextTotalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/ListPedTextResultMarginLeft"
+                android:text="2h34m32s"
+                android:textSize="@dimen/ListPedTextResultSize" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

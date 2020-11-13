@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/FragmentCheckmeInfoImgCheckme"
+        android:layout_width="200dp"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/checkme" />
+
+    <LinearLayout
+        android:id="@+id/FragmentCheckmeInfoLinearMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FragmentCheckmeInfoImgCheckme"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/FragmentCheckmeInfoTextModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Series: Checkme Pro" 
+            android:textSize="18sp"
+            android:textColor="@color/default_bkg"/>
+
+        <TextView
+            android:id="@+id/FragmentCheckmeInfoTextSoftware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Version: 5.0.0" 
+            android:textSize="18sp"
+            android:textColor="@color/default_bkg"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/FragmentCheckmeInfoTextSN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SN: 123456789" 
+            android:textSize="18sp"
+            android:textColor="@color/default_bkg"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/FragmentCheckmeInfoBnUpdate"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/FragmentCheckmeInfoLinearMain"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/White"
+        android:layout_marginTop="25dp"
+		android:background="@drawable/button_blue"        
+        android:text="@string/update"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ListBkg" >
+
+    <RelativeLayout
+        android:id="@+id/ECGDetailRelativeSummary"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/ECGDetailSummaryH"
+        android:layout_marginLeft="@dimen/ECGDetailSummaryMarginLR"
+        android:layout_marginRight="@dimen/ECGDetailSummaryMarginLR"
+        android:layout_marginTop="@dimen/ECGDetailSummaryMarginTB"
+        android:background="@drawable/border_list_item"
+        android:paddingLeft="@dimen/ECGDetailSummaryPaddingLR"
+        android:paddingRight="@dimen/ECGDetailSummaryPaddingLR"
+        android:paddingTop="@dimen/ECGDetailSummaryPaddingTB" >
+
+        <ImageView
+            android:id="@+id/ECGDetailImgCheckMode"
+            android:layout_width="@dimen/ECGDetailImgCheckModeWH"
+            android:layout_height="@dimen/ECGDetailImgCheckModeWH"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/ECGDetailImgCheckModeMarginTop"
+            android:src="@drawable/hand_chest" />
+
+        <RelativeLayout
+            android:id="@+id/ECGDetailRelativeSummaryTextResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <LinearLayout
+                android:id="@+id/ECGRESULT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/ECGDetailTextHR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ECGDetailSummaryTextResultMarginTop"
+                    android:layout_weight="1"
+                    android:text="@string/hr"
+                    android:textColor="@color/GrayText"
+                    android:textSize="@dimen/ECGDetailSummaryTextSize" />
+
+                <TextView
+                    android:id="@+id/ECGDetailTextQRS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/ECGDetailSummaryTextResultMarginTop"
+                    android:layout_weight="1"
+                    android:text="@string/qrs"
+                    android:textColor="@color/GrayText"
+                    android:textSize="@dimen/ECGDetailSummaryTextSize" />
+
+                <TextView
+                    android:id="@+id/ECGDetailTextST"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/ECGDetailSummaryTextResultMarginTop"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/st"
+                    android:textColor="@color/GrayText"
+                    android:textSize="@dimen/ECGDetailSummaryTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ECGRESULT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ECGRESULT1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/ECGDetailTextQT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ECGDetailSummaryTextResultMarginTop"
+                    android:layout_weight="1"
+                    android:text="@string/qt"
+                    android:textColor="@color/GrayText"
+                    android:textSize="@dimen/ECGDetailSummaryTextSize"
+                    />
+
+                <TextView
+                    android:id="@+id/ECGDetailTextQTC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/ECGDetailSummaryTextResultMarginTop"
+                    android:layout_weight="1"
+                    android:text="@string/qtc"
+                    android:textColor="@color/GrayText"
+                    android:textSize="@dimen/ECGDetailSummaryTextSize" />
+            </LinearLayout>
+
+            <!--
+                 <TextView
+                android:id="@+id/ECGDetailTextHR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/ECGDetailSummaryTextResultMarginTop"
+                android:text="@string/hr"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/ECGDetailSummaryTextSize" />
+
+            <TextView
+                android:id="@+id/ECGDetailTextQRS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/ECGDetailTextHR"
+                android:layout_below="@id/ECGDetailTextHR"
+                android:layout_marginTop="@dimen/ECGDetailSummaryTextResultMarginTop"
+                android:text="@string/qrs"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/ECGDetailSummaryTextSize" />
+
+            <TextView
+                android:id="@+id/ECGDetailTextST"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/ECGDetailTextHR"
+                android:singleLine="true"
+                android:layout_below="@id/ECGDetailTextQRS"
+                android:layout_marginTop="@dimen/ECGDetailSummaryTextResultMarginTop"
+                android:text="@string/st"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/ECGDetailSummaryTextSize" />
+            -->
+
+            <TextView
+                android:id="@+id/ECGDetailTextResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ECGRESULT2"
+                android:layout_alignLeft="@id/ECGRESULT2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="@dimen/ECGDetailSummaryTextResultMarginTop"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="result"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/ECGDetailSummaryTextSize"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ECGDetailRelImgResult"
+            android:layout_width="@dimen/ECGDetailImgResultWH"
+            android:layout_height="@dimen/ECGDetailImgResultWH"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/ECGDetailImgResultMarginTop"
+            android:src="@drawable/none"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ECGDetailImgVoice"
+            android:layout_width="@dimen/ECGDetailImgVoiceWH"
+            android:layout_height="@dimen/ECGDetailImgVoiceWH"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/ECGDetailImgPro"
+            android:layout_width="@dimen/ECGDetailImgVoiceWH"
+            android:layout_height="@dimen/ECGDetailImgVoiceWH"
+            android:layout_alignLeft="@id/ECGDetailImgVoice"
+            android:layout_alignTop="@id/ECGDetailImgVoice"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ECGDetailReChartMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ECGDetailRelativeSummary"
+        android:layout_margin="@dimen/ECGDetailReChartMainMargin"
+        android:background="@drawable/border_list_item" >
+
+        <TextView
+            android:id="@+id/ECGDetailTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/ECGDetailTextDateMarginBottom"
+            android:layout_marginRight="@dimen/ECGDetailTextDateMarginRight"
+            android:textColor="@color/Gray" />
+
+        <TextView
+            android:id="@+id/ECGDetailTextBand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ECGDetailTextDate"
+            android:layout_marginRight="@dimen/ECGDetailTextBandMarginRight"
+            android:layout_toLeftOf="@id/ECGDetailTextDate"
+            android:textColor="@color/Gray" />
+
+        <ScrollView
+            android:id="@+id/ECGDetailSVChart"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/ECGDetailTextDate"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/ECGDetailReChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ECGDetailChartMarginTB"
+                android:layout_marginLeft="@dimen/ECGDetailChartMarginLR"
+                android:layout_marginRight="@dimen/ECGDetailChartMarginLR"
+                android:layout_marginTop="@dimen/ECGDetailChartMarginTB"
+                android:background="@color/Gray" >
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

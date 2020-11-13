@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.viatom.newazur">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    -->
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false"/>
+
+
+
+    <application
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:replace="android:allowBackup"
+        android:name="com.viatom.azur.element.CEApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme">
+        <activity
+            android:name="com.viatom.azur.activity.MainActivity"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.FullScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.viatom.azur.activity.ECGMain"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name">
+        </activity>
+        <!--
+            <activity
+            android:name="com.viatom.azur.activity.OtherInfo"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.viatom.azur.activity.ECGDetail"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name" >
+        </activity>
+        -->
+        <activity
+            android:name="com.viatom.azur.activity.ECGAnalyze"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="behind">
+        </activity>
+        <activity
+            android:name="com.viatom.azur.activity.DailyCheck"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.viatom.azur.activity.SPO2Main"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.viatom.azur.activity.TempMain"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.viatom.azur.activity.BPActivity"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.viatom.azur.activity.SLMMain"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name">
+        </activity>
+        <!-- <activity -->
+        <!-- android:name="com.viatom.azur.activity.SLMDetail" -->
+        <!-- android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection" -->
+        <!-- android:label="@string/app_name" > -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.viatom.azur.activity.PedMain"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.viatom.azur.activity.AboutCheckme"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.viatom.azur.activity.AboutApp"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name">
+
+        </activity>
+
+        <activity
+            android:name="com.viatom.azur.activity.DisclaimerActivity"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoTitle">
+
+        </activity>
+
+        <activity
+            android:name="com.viatom.azur.activity.DownloadActivity"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.viatom.azur.activity.SettingsActivity"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.viatom.azur.activity.SpotCheck"
+            android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.viatom.azur.monitor.ui.MonitorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.viatom.azur.monitor.ui.MonitorActivityPlay"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.viatom.azur.monitor.ui.MonitorDetaiListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name="com.viatom.azur.activity.EntryActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.FullScreen">
+        </activity>
+
+        <service android:name="com.viatom.azur.bluetooth.BTUtils">
+            <intent-filter>
+
+                <!-- 为该Service组件的intent-filter配置action -->
+                <action android:name="com.viatom.azur.BTUtils"/>
+            </intent-filter>
+        </service>
+
+        <service android:name="com.viatom.azur.bluetooth.BleUtils">
+            <intent-filter>
+
+                <!-- 为该Service组件的intent-filter配置action -->
+                <action android:name="com.viatom.azur.BleUtils"/>
+            </intent-filter>
+        </service>
+
+        <service android:name="com.viatom.azur.monitor.bt.BTUtils">
+            <intent-filter>
+
+                <!-- 为该Service组件的intent-filter配置action -->
+                <action android:name="com.viatom.azur.monitor.BTUtils"/>
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.viatom.azur.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="549a0bc4fd98c5dfb5000242">
+
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Google Play"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ECGMainReMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ListBkg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/ECGMainLinearListMarginLR"
+        android:layout_marginRight="@dimen/ECGMainLinearListMarginLR"
+        android:layout_marginTop="@dimen/ECGMainLinearListMarginTop"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/ECGMainListPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/ImgNoInfo"
+            android:layout_width="@dimen/ImgNoInfoSize"
+            android:layout_height="@dimen/ImgNoInfoSize"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/no_record"
+            android:visibility="invisible" />
+
+        <!-- <ListView
+            android:id="@+id/ECGMainList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="@dimen/ECGMainListDividerH" /> -->
+            
+            
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+	        android:id="@+id/ECGMainList"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        android:divider="@null"
+	        android:dividerHeight="@dimen/ECGMainListDividerH"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

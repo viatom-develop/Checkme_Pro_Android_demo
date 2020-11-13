@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ListBkg" >
+
+    <RelativeLayout
+        android:id="@+id/TempMainLinearList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/TempMainLinearListMarginTB"
+        android:layout_marginLeft="@dimen/TempMainLinearListMarginLR"
+        android:layout_marginRight="@dimen/TempMainLinearListMarginLR"
+        android:layout_marginTop="@dimen/TempMainLinearListMarginTB"
+        android:background="@drawable/border_list_item"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/TempMainListPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/TempMainList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/TempMainListMarginLR"
+            android:layout_marginRight="@dimen/TempMainListMarginLR"
+            android:divider="@color/Gray"
+            android:dividerHeight="@dimen/TempMainListDividerH" />
+    </RelativeLayout>
+	
+    <ImageView
+        android:id="@+id/ImgNoInfo"
+        android:layout_width="@dimen/ImgNoInfoSize"
+        android:layout_height="@dimen/ImgNoInfoSize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:src="@drawable/no_record"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/ListTempReMainPaddingTB"
+    android:paddingLeft="@dimen/ListTempReMainPaddingLR"
+    android:paddingRight="@dimen/ListTempReMainPaddingLR"
+    android:paddingTop="@dimen/ListTempReMainPaddingTB" >
+
+    <LinearLayout
+        android:id="@+id/ListTempLinearDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" 
+        android:layout_marginLeft="@dimen/ListTempLinearDateMarginLeft">
+
+        <TextView
+            android:id="@+id/ListTempTextTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/time"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/ListTempTextTimeTextSize" />
+
+        <TextView
+            android:id="@+id/ListTempTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ListTempTextDateTimeDis"
+            android:text="@string/date"
+            android:textColor="@color/Gray"
+            android:textSize="@dimen/ListTempTextDateTextSize" />
+    </LinearLayout>
+
+    <ImageView android:id="@+id/ListTempImgResult"
+        android:layout_width="@dimen/ListTempImgResultWH"
+        android:layout_height="@dimen/ListTempImgResultWH"
+        android:layout_centerInParent="true"/>
+    
+    <!-- <ImageView android:id="@+id/ListTempImgCheckMode"
+        android:layout_width="@dimen/ListTempImgResultWH"
+        android:layout_height="@dimen/ListTempImgResultWH"
+        android:layout_toRightOf="@id/ListTempImgResult"
+        android:layout_marginLeft="10dp"/> -->
+    
+    <LinearLayout
+        android:id="@+id/ListTempLinearResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true" >
+        
+        <TextView
+            android:id="@+id/ListTempTextResult"
+            android:layout_width="@dimen/ListTempTextResultWidth"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/border_item_result"
+            android:text="result"
+            android:textColor="@color/White"
+            android:textSize="@dimen/ListTempTextResultTextSize" 
+            android:layout_marginLeft="@dimen/ListTempTextResultMarginLeft"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</RelativeLayout>

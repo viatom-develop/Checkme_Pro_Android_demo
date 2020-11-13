@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bkg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_main_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="@dimen/ListDailyCheckReMainPaddingTB"
+        android:paddingLeft="@dimen/ListDailyCheckReMainPaddingLR"
+        android:paddingRight="@dimen/ListDailyCheckReMainPaddingLR"
+        android:paddingTop="@dimen/ListDailyCheckReMainPaddingTB" >
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/ListDailyCheckTextTimeSize" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/ListDailyCheckTextDateTimeDis"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/ListDailyCheckTextDateSize" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_result"
+            android:layout_width="@dimen/ListDailyCheckImgResultWH"
+            android:layout_height="@dimen/ListDailyCheckImgResultWH"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ListDailyCheckImgResultMarginLeft"
+            android:layout_toRightOf="@id/ll_date"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_voice"
+            android:layout_width="@dimen/ListDailyCheckImgVoiceW"
+            android:layout_height="@dimen/ListDailyCheckImgVoiceH"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ListDailyCheckImgVoiceMarginLeft"
+            android:layout_toRightOf="@id/iv_result"
+            android:gravity="center_vertical"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/bn_act"
+            android:layout_width="@dimen/ListDailyCheckBnActW"
+            android:layout_height="@dimen/ListDailyCheckBnActH"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/ListDailyCheckBnActtMarginLeft"
+            android:background="@drawable/button_download"
+            android:focusable="false" 
+            android:clickable="false"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pro_main"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/ListDailyCheckProH"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/progress_bar" />
+
+</RelativeLayout>

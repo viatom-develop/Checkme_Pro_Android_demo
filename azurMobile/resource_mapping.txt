@@ -1,0 +1,11 @@
+res path mapping:
+    res/drawable-hdpi -> res/drawable-hdpi
+    res/drawable-mdpi -> res/drawable-mdpi
+    res/drawable-xhdpi -> res/drawable-xhdpi
+    res/drawable-xxhdpi -> res/drawable-xxhdpi
+    res/drawable-ldpi -> res/drawable-ldpi
+    res/drawable-de-mdpi -> res/drawable-de-mdpi
+    res/drawable-fr-mdpi -> res/drawable-fr-mdpi
+    res/drawable-hu-mdpi -> res/drawable-hu-mdpi
+    res/drawable-ja-mdpi -> res/drawable-ja-mdpi
+    res/drawable-zh-rCN-mdpi -> res/drawable-zh-rCN-mdpi

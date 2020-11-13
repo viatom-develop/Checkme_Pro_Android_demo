@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ListBkg" >
+
+
+    <RelativeLayout
+        android:id="@+id/ECGDetailReChartMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/ECGDetailReChartMainMargin"
+        android:background="@drawable/border_list_item" >
+
+        <TextView
+            android:id="@+id/ECGDetailTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/ECGDetailTextDateMarginBottom"
+            android:layout_marginRight="@dimen/ECGDetailTextDateMarginRight"
+            android:textColor="@color/Gray" />
+
+        <TextView
+            android:id="@+id/ECGDetailTextBand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ECGDetailTextDate"
+            android:layout_marginRight="@dimen/ECGDetailTextBandMarginRight"
+            android:layout_toLeftOf="@id/ECGDetailTextDate"
+            android:textColor="@color/Gray" />
+
+        <ScrollView
+            android:id="@+id/ECGDetailSVChart"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/ECGDetailTextDate" 
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/ECGDetailReChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ECGDetailChartMarginTB"
+                android:layout_marginLeft="@dimen/ECGDetailChartMarginLR"
+                android:layout_marginRight="@dimen/ECGDetailChartMarginLR"
+                android:layout_marginTop="@dimen/ECGDetailChartMarginTB"
+                android:background="@color/Gray" >
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

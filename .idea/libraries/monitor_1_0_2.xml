@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="monitor-1.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/4abadfc05c39498849bc90c75fafcef6af4e8b41/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/4abadfc05c39498849bc90c75fafcef6af4e8b41/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

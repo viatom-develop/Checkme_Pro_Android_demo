@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/WidgetActionBarH"
+    android:background="@drawable/action_bar_bg" >
+
+    <!--
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    -->
+
+    <Button
+        android:id="@+id/WidgetActionbarBnMenu"
+        android:layout_width="@dimen/WidgetActionBarButtonLeftSize"
+        android:layout_height="@dimen/WidgetActionBarButtonLeftSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_left_menu" />
+
+    <LinearLayout android:id="@+id/ll_ab_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/WidgetActionbarBnCloud"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:src="@drawable/cloud_offline"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/WidgetActionbarBnShare"
+            android:layout_width="@dimen/WidgetActionBarButtonUserSize"
+            android:layout_height="@dimen/WidgetActionBarButtonUserSize"
+            android:background="@drawable/button_share"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/WidgetActionbarBnUser"
+            android:layout_width="@dimen/WidgetActionBarButtonUserSize"
+            android:layout_height="@dimen/WidgetActionBarButtonUserSize"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/WidgetActionbarTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="150dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
+
+</RelativeLayout>

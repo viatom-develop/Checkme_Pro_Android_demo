@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/DarkGray"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/lv_mulu_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:listSelector="@color/Gray"
+            android:background="@color/White"
+            android:dividerHeight="2dp"
+            android:scrollbars="none" >
+        </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+        <RelativeLayout
+            android:id="@+id/fl_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/lv_mulu_list"
+            android:padding="2dp"
+            android:layout_weight="3"
+            android:background="@android:color/black" >
+
+            <RelativeLayout
+                android:id="@+id/rl_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                 >
+
+                <ImageView
+                    android:id="@+id/iv_show"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/s_play" />
+
+                <TextView
+                    android:id="@+id/tv_file_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_show"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                     />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_show_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/s_play" 
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

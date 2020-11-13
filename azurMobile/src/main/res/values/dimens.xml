@@ -1,0 +1,341 @@
+<resources>
+    
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <integer name="num_cols">1</integer>
+    
+	<!-- 全局相关 -->
+		<!-- 顶部导航栏 -->
+		<dimen name="TitleBarPaddingTop">5dp</dimen>
+		<dimen name="TitleBarPaddingBottom">5dp</dimen>
+			<!-- 返回按钮 -->
+		    <dimen name="BnBackW">50dp</dimen>
+		    <dimen name="BnBackH">40dp</dimen>
+		    <!-- 分享按钮 -->
+		    <dimen name="BnShareW">50dp</dimen>
+		    <dimen name="BnShareH">40dp</dimen>
+		    <dimen name="BnShareMarginRight">40dp</dimen>
+		    <!-- 顶部导航栏标题 -->
+		    <dimen name="TitleSize">26sp</dimen>
+		    <dimen name="TitleSPO2H">40dp</dimen>
+	    <!-- 排序Tab栏 -->
+		    <!-- 上下小三角 -->
+		    <dimen name="DeltaWH">10dp</dimen>
+		    <dimen name="DeltaDis">2dp</dimen>
+		    <!-- 分隔线 -->
+		    <dimen name="TabLineW">2dp</dimen>
+		    <dimen name="TabLineH">20dp</dimen>
+		    <!-- 字体 -->
+		    <dimen name="BnTabTextSize">20sp</dimen>
+	    <!-- 底部导航栏 -->
+	    <dimen name="BottomBarLength">60dp</dimen>
+	    
+	
+	<!-- Main Activity -->
+	<dimen name="MainImgViatomLogoW">270dp</dimen>
+	<dimen name="MainImgViatomLogoH">90dp</dimen>
+	
+	<!-- ChoseUser Activity -->
+	<dimen name="ChoseUserReMainPaddingTop">15dp</dimen>
+	<dimen name="ChoseUserReMainPaddingLR">10dp</dimen>
+	<dimen name="ChoseUserListDividerH">15dp</dimen>
+		<!-- 用户框 -->
+		<dimen name="ChoseUserReUserFramePadding">10dp</dimen>
+		<dimen name="ChoseUserReUserFrameWidth">135dp</dimen>
+		<dimen name="ChoseUserReUserFrameHeight">100dp</dimen>
+		<dimen name="ChoseUserReUserFrameMarginLeft">20dp</dimen>
+		<dimen name="ChoseUserReUserFrameMarginTop">15dp</dimen>
+		<dimen name="ChoseUserImgUserFrameIcoHW">50dp</dimen>
+		<dimen name="ChoseUserImgUserFrameIcoMarginTop">5dp</dimen>
+		<dimen name="ChoseUserTextUserFrameNameMarginTop">2dp</dimen>
+		
+	
+	<!-- DailyCheck -->
+	<dimen name="DailyCheckLinearListMarginTop">5dp</dimen>
+	<dimen name="DailyCheckLinearListMarginLeft">5dp</dimen>
+	<dimen name="DailyCheckLinearListMarginRight">5dp</dimen>
+	<dimen name="DailyCheckListDividerH">5dp</dimen>
+	<dimen name="DailyCheckListPaddingBottom">5dp</dimen>
+	<!-- <dimen name="DailyCheckLayoutChoseUserMarginBottom">60dp</dimen> -->
+	
+	<!-- DailyCheck Detail -->
+		<!-- Summary相关 -->
+		<dimen name="DailyCheckDetailSummaryH">215dp</dimen>
+		<dimen name="DailyCheckDetailSummaryMargin">5dp</dimen>
+		<dimen name="DailyCheckDetailSummarySubH">65dp</dimen>
+		<dimen name="DailyCheckDetailSummarySubH1">90dp</dimen>
+		<dimen name="DailyCheckDetailSummaryTextSPO2H">35dp</dimen><!-- 特殊SPO2 -->
+		<dimen name="DailyCheckDetailSummaryTextMarginLeft">20dp</dimen>
+		<dimen name="DailyCheckDetailSummaryTextMarginTop">5dp</dimen>
+		<dimen name="DailyCheckDetailSummaryTextSize">17sp</dimen>
+		<dimen name="DailyCheckDetailSummaryImgWH">25dp</dimen>
+		<dimen name="DailyCheckDetailSummaryImgResultMarginRight">20dp</dimen>
+		<dimen name="DailyCheckDetailSummaryImgVoiceMarginRight">50dp</dimen>
+		<dimen name="DailyCheckDetailSummaryLineH">2dp</dimen>
+		<dimen name="DailyCheckDetailSummaryLineMarginLR">10dp</dimen>
+		<!-- ReChart -->
+		<dimen name="DailyCheckDetailReChartMainMargin">5dp</dimen>
+		
+		
+	<!-- SLM Detail -->
+	<dimen name="SLMDetailSummaryH">140dp</dimen>
+	<dimen name="SLMDetailSummaryMargin">5dp</dimen>
+	<dimen name="SLMDetailSummarySubH">60dp</dimen>
+	<dimen name="SLMDetailSummaryTextMarginLeft">35dp</dimen>
+	<dimen name="SLMDetailSummaryTextMarginTop">3dp</dimen>
+	<dimen name="SLMDetailSummaryTextSize">18sp</dimen>
+	<dimen name="SLMDetailSummaryImgWH">30dp</dimen>
+	<dimen name="SLMDetailSummaryImgMarginRight">15dp</dimen>
+	<dimen name="SLMDetailSummaryImgMarginBottom">40dp</dimen>
+	<dimen name="SLMDetailSummaryLineH">2dp</dimen>
+	<dimen name="SLMDetailSummaryLineMarginLR">10dp</dimen>	
+	<dimen name="SLMDetailChartMarginLR">7dp</dimen>
+	<dimen name="SLMDetailChartMarginTop">7dp</dimen>
+	<dimen name="SLMDetailReChartSeekBarMarginBottom">65dp</dimen>
+	<dimen name="SLMDetailChartMarginBottom">7dp</dimen>
+	<dimen name="SLMDetailSeekBarMarginLR">8dp</dimen>
+		
+	<!-- SleepMonitor -->
+	<dimen name="SLMMainLinearListMarginTB">5dp</dimen>
+	<dimen name="SLMMainLinearListMarginLeft">9dp</dimen>
+	<dimen name="SLMMainLinearListMarginRight">9dp</dimen>
+	<dimen name="SLMMainListDividerH">5dp</dimen>
+		
+	<!-- ECGDetail -->
+	<dimen name="ECGDetailSummaryH">160dp</dimen>
+	<dimen name="ECGDetailSummaryMarginLR">7dp</dimen>
+	<dimen name="ECGDetailSummaryMarginTB">5dp</dimen>
+	<dimen name="ECGDetailSummaryPaddingTB">10dp</dimen>
+	<dimen name="ECGDetailSummaryPaddingLR">20dp</dimen>
+	<dimen name="ECGDetailSummaryTextResultMarginRight">30dp</dimen>
+	<dimen name="ECGDetailSummaryTextResultMarginTop">4dp</dimen>
+	<dimen name="ECGDetailSummaryTextSize">20sp</dimen>
+	<!-- <dimen name="ECGDetailSummaryECGResultTextSize">18sp</dimen> -->
+	<dimen name="ECGDetailChartMarginLR">5dp</dimen>
+	<dimen name="ECGDetailChartMarginTB">5dp</dimen>
+	<dimen name="ECGDetailChartPaddingTB">15dp</dimen>
+	<dimen name="ECGDetailChartPaddingLR">5dp</dimen>
+	<dimen name="ECGDetailImgCheckModeWH">60dp</dimen>
+	<dimen name="ECGDetailImgCheckModeMarginTop">20dp</dimen>
+	<dimen name="ECGDetailImgResultWH">60dp</dimen>
+	<dimen name="ECGDetailImgResultMarginTop">20dp</dimen>
+	<dimen name="ECGDetailImgVoiceWH">25dp</dimen>
+	<dimen name="ECGDetailChartMarginBottom">65dp</dimen>
+	<dimen name="ECGDetailTextBandMarginRight">10dp</dimen>
+	<dimen name="ECGDetailTextDateMarginRight">12dp</dimen>
+	<dimen name="ECGDetailTextDateMarginBottom">2dp</dimen>
+	<dimen name="ECGDetailReChartMainMargin">5dp</dimen>
+	
+	<!-- ECGMain -->
+	<dimen name="ECGMainLinearListMarginTop">5dp</dimen>
+	<dimen name="ECGMainLinearListMarginLR">9dp</dimen>
+	<dimen name="ECGMainListDividerH">5dp</dimen>
+	
+	<!-- SPO2Main -->
+	<dimen name="SPO2MainLinearListMarginTB">5dp</dimen>
+	<dimen name="SPO2MainLinearListMarginLR">9dp</dimen>
+	<dimen name="SPO2MainListMarginLR">5dp</dimen>
+	<dimen name="SPO2MainListDividerH">1dp</dimen>
+	
+	<!-- TempMain -->
+	<dimen name="TempMainLinearListMarginTB">5dp</dimen>
+	<dimen name="TempMainLinearListMarginLR">9dp</dimen>
+	<dimen name="TempMainListMarginLR">5dp</dimen>
+	<dimen name="TempMainListDividerH">1dp</dimen>
+
+	<!--BP Main-->
+	<dimen name="BPMainLinearListMarginTB">5dp</dimen>
+	<dimen name="BPMainLinearListMarginLR">9dp</dimen>
+	<dimen name="BPMainListMarginLR">5dp</dimen>
+	<dimen name="BPMainListDividerH">1dp</dimen>
+	
+	<!-- PedMain -->
+	<dimen name="PedMainLinearListMarginTB">5dp</dimen>
+	<dimen name="PedMainLinearListMarginLR">5dp</dimen>
+	<dimen name="PedMainListMarginLR">5dp</dimen>
+	<dimen name="PedMainListDividerH">5dp</dimen>
+	
+	
+	<!-- ECG Analyze -->
+	<dimen name="ECGAnalyzeLinearChartMarginBottom">30dp</dimen>
+	
+	<!-- List DailyCheck -->
+	<dimen name="ListDailyCheckReMainPaddingTB">10dp</dimen>
+	<dimen name="ListDailyCheckReMainPaddingLR">15dp</dimen>
+	<dimen name="ListDailyCheckTextTimeSize">16sp</dimen>
+	<dimen name="ListDailyCheckTextDateSize">12sp</dimen>
+	<dimen name="ListDailyCheckTextDateTimeDis">2dp</dimen>
+	<dimen name="ListDailyCheckImgVoiceW">40dp</dimen>
+	<dimen name="ListDailyCheckImgVoiceH">35dp</dimen>
+	<dimen name="ListDailyCheckImgVoiceMarginLeft">15dp</dimen>
+	<dimen name="ListDailyCheckImgResultWH">40dp</dimen>
+	<dimen name="ListDailyCheckImgResultMarginLeft">25dp</dimen>
+	<dimen name="ListDailyCheckBnActtMarginLeft">10dp</dimen>
+	<dimen name="ListDailyCheckBnActW">60dp</dimen>
+	<dimen name="ListDailyCheckBnActH">44dp</dimen>
+	<dimen name="ListDailyCheckProH">80dp</dimen>
+
+	<!-- list SLM -->
+	<dimen name="ListSLMReMainPaddingTB">10dp</dimen>
+	<dimen name="ListSLMReMainPaddingLR">15dp</dimen>
+	<dimen name="ListSLMTextTimeSize">16sp</dimen>
+	<dimen name="ListSLMTextDateSize">12sp</dimen>
+	<dimen name="ListSLMTextDateTimeDis">2dp</dimen>
+	<dimen name="ListSLMImgResultWH">40dp</dimen>
+	<dimen name="ListSLMImgResultMarginLeft">28dp</dimen>
+	<dimen name="ListSLMBnActMarginLeft">10dp</dimen>
+	<dimen name="ListSLMBnActW">60dp</dimen>
+	<dimen name="ListSLMBnActH">44dp</dimen>
+	<dimen name="ListSLMProH">80dp</dimen>
+
+	<!-- list RLM -->
+	<dimen name="ListRLMReMainPaddingTB">10dp</dimen>
+	<dimen name="ListRLMReMainPaddingLR">15dp</dimen>
+	<dimen name="ListRLMTextTimeSize">16sp</dimen>
+	<dimen name="ListRLMTextDateSize">18sp</dimen>
+	<dimen name="ListRLMTextDateTimeDis">2dp</dimen>
+	<dimen name="ListRLMImgResultWH">40dp</dimen>
+	<dimen name="ListRLMImgResultMarginLeft">28dp</dimen>
+	<dimen name="ListRLMBnActMarginLeft">10dp</dimen>
+	<dimen name="ListRLMBnActW">60dp</dimen>
+	<dimen name="ListRLMBnActH">44dp</dimen>
+	<dimen name="ListRLMProH">80dp</dimen>
+	
+	<!-- List ECGMain -->
+	<dimen name="ListECGMainReMainPaddingTB">10dp</dimen>
+	<dimen name="ListECGMainReMainPaddingLR">15dp</dimen>
+	<dimen name="ListECGMainBnActW">60dp</dimen>
+	<dimen name="ListECGMainBnActH">44dp</dimen>
+	<dimen name="ListECGMainTextTimeTextSize">16sp</dimen>
+	<dimen name="ListECGMainTextDateTextSize">12sp</dimen>
+	<dimen name="ListECGMainTextDateTimeDis">2dp</dimen>
+	<dimen name="ListECGMainImgVoiceW">40dp</dimen>
+	<dimen name="ListECGMainImgVoiceH">35dp</dimen>
+	<dimen name="ListECGMainImgVoiceMarginLeft">10dp</dimen>
+	<dimen name="ListECGMainImgCheckModeWH">50dp</dimen>
+	<dimen name="ListECGMainImgCheckModeMarginLeft">15dp</dimen>
+	<dimen name="ListECGMainImgResultWH">40dp</dimen>
+	<dimen name="ListECGMainImgResultMarginLeft">10dp</dimen>
+	<dimen name="ListECGMainProH">80dp</dimen>
+	
+	<!-- List SPO2 -->
+	<dimen name="ListSPO2ReMainPaddingTB">8dp</dimen>
+	<dimen name="ListSPO2ReMainPaddingLR">5dp</dimen>
+	<dimen name="ListSPO2TextTimeTextSize">16sp</dimen>
+	<dimen name="ListSPO2TextDateTextSize">12sp</dimen>
+	<dimen name="ListSPO2TextDateTimeDis">2dp</dimen>
+	<dimen name="ListSPO2TextResultTextSize">13sp</dimen>
+	<dimen name="ListSPO2TextResultMarginLeft">5dp</dimen>
+	<dimen name="ListSPO2TextSPO2W">45dp</dimen>
+	<dimen name="ListSPO2TextPRW">65dp</dimen>
+	<dimen name="ListSPO2TextPIW">50dp</dimen>
+	<dimen name="ListSPO2ImgResultWH">35dp</dimen>
+	
+	<!-- List Temp -->
+	<dimen name="ListTempReMainPaddingTB">8dp</dimen>
+	<dimen name="ListTempReMainPaddingLR">5dp</dimen>
+	<dimen name="ListTempLinearDateMarginLeft">10dp</dimen>
+	<dimen name="ListTempTextTimeTextSize">16sp</dimen>
+	<dimen name="ListTempTextDateTextSize">12sp</dimen>
+	<dimen name="ListTempTextDateTimeDis">2dp</dimen>
+	<dimen name="ListTempTextResultWidth">75dp</dimen>
+	<dimen name="ListTempTextResultTextSize">20sp</dimen>
+	<dimen name="ListTempTextResultMarginLeft">20dp</dimen>
+	<dimen name="ListTempImgResultWH">40dp</dimen>
+	
+	<!-- List User -->
+	<!-- <dimen name="ListUserLinearMainPaddingLR">50dp</dimen>-->
+	<dimen name="ListUserReMainH">80dp</dimen> 
+	<dimen name="ListUserReMainPaddingTB">10dp</dimen>
+	<dimen name="ListUserImgIcoMarginLeft">5dp</dimen>
+	<dimen name="ListUserTextNameTextSize">25dp</dimen>	
+	<dimen name="ListUserTextNameMarginRight">20dp</dimen>
+	<dimen name="ListUserImgArrowsW">13dp</dimen>	
+	<dimen name="ListUserImgArrowsH">20dp</dimen>	
+	
+	<!-- List Ped -->
+	<dimen name="ListPedReMainPaddingTB">10dp</dimen>
+	<dimen name="ListPedReMainPaddingLR">5dp</dimen>
+	<dimen name="ListPedTextTimeSize">18sp</dimen>
+	<dimen name="ListPedTextDateSize">12sp</dimen>
+	<dimen name="ListPedTextDateTimeDis">2dp</dimen>
+	<dimen name="ListPedTextStepsSize">25sp</dimen>
+	<dimen name="ListPedTextDisSize">23sp</dimen>
+	<dimen name="ListPedImgResultWH">20dp</dimen>
+	<dimen name="ListPedTextResultSize">16sp</dimen>
+	<dimen name="ListPedTextResultMarginLeft">13dp</dimen>
+	
+	<!-- TabPage BP&OXYGEN -->
+	<dimen name="TabPageReMainPaddingTLR">5dp</dimen>	
+	<dimen name="TabPageReMainPaddingBottom">5dp</dimen>	
+	<dimen name="TabPageBnChartSize">30dp</dimen>	
+	<dimen name="TabPageLinearBnWMSPaddingLR">30dp</dimen>
+	<dimen name="TabPageLinearBnWMSPaddingTB">5dp</dimen>
+	<dimen name="TabPageReMainMargin">5dp</dimen>
+	<dimen name="TabPageBnZoomSize">30dp</dimen>
+	
+	<!-- TabPage ECG -->
+	<dimen name="TabECGReChartPaddingTB">8dp</dimen>	
+	<dimen name="TabECGTextDateMarginRight">5dp</dimen>
+	<dimen name="TabECGTextDateMarginBottom">2dp</dimen>
+	<dimen name="TabECGTextBandMarginRight">12dp</dimen>
+	
+	<!-- SpinerLeadItem -->
+	<dimen name="SpinerLeadItemLinearMainMinH">60dp</dimen>
+	<dimen name="SpinerLeadItemLinearMainMinW">170dp</dimen>
+	<dimen name="SpinerLeadItemLinearMainPaddingLR">20dp</dimen>
+	<dimen name="SpinerLeadItemImgCheckModeMarginTB">2dp</dimen>
+	<dimen name="SpinerLeadItemImgCheckModeWH">50dp</dimen>
+	<dimen name="SpinerLeadItemImgCheckBoxMarginLeft">35dp</dimen>
+	<dimen name="SpinerLeadItemImgCheckBoxWH">30dp</dimen>
+	
+	<!-- SpinerTypeItem -->
+	<dimen name="SpinerTypeItemLinearMainMinH">50dp</dimen>
+	<dimen name="SpinerTypeItemLinearMainMinW">130dp</dimen>
+	<dimen name="SpinerTypeItemLinearMainPaddingLR">20dp</dimen>
+	<dimen name="SpinerTypeItemImgReslutWH">30dp</dimen>
+	<dimen name="SpinerTypeItemImgCheckBoxMarginLeft">20dp</dimen>
+	<dimen name="SpinerTypeItemImgCheckBoxWH">30dp</dimen>
+	
+	<!-- SpinerWindows -->
+	<dimen name="SpinerWindowsPaddingTop">20dp</dimen>
+	<dimen name="SpinerWindowsPaddingBottom">10dp</dimen>
+	
+	<!-- 矢量图 -->
+	<dimen name="BorderListItemPadding">5dp</dimen>
+	
+	
+	<dimen name="WidgetActionBarH">48dp</dimen>
+	<dimen name="WidgetActionBarButtonLeftSize">48dp</dimen>
+	<dimen name="WidgetActionBarButtonUserSize">35dp</dimen>
+	<dimen name="WidgetActionBarButtonShareSize">48dp</dimen>
+	<dimen name="WidgetActionBarButtonRightMarginRight">8dp</dimen>
+	
+	<dimen name="RowRightMenuHeight">60dp</dimen>
+	
+	<!-- 无信息 -->
+	<dimen name="ImgNoInfoSize">200dp</dimen>
+
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_marginbottom">2dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
+
+	<dimen name="text_size_tiny">10sp</dimen>
+	<dimen name="text_size_small">12sp</dimen>
+	<dimen name="text_size_medium">14sp</dimen>
+	<dimen name="text_size_normal">16sp</dimen>
+	<dimen name="text_size_big">18sp</dimen>
+	<dimen name="text_size_large">20sp</dimen>
+	<dimen name="text_size_x_large">28sp</dimen>
+	<dimen name="text_size_supper_large">50sp</dimen>
+
+	<dimen name="dialog_title_size">18sp</dimen>
+	<dimen name="dialog_title_padding">20dp</dimen>
+	<dimen name="dialog_btn_size">20sp</dimen>
+	<dimen name="dialog_btn_padding">12dp</dimen>
+	<dimen name="dialog_btn_margin_H">8dp</dimen>
+	<dimen name="dialog_btn_margin_V">6dp</dimen>
+</resources>
+

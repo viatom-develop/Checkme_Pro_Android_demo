@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView android:id="@+id/MainImgViatomLogo"
+	    android:layout_width="@dimen/MainImgViatomLogoW"
+	    android:layout_height="@dimen/MainImgViatomLogoH"
+	    android:src="@drawable/icon"
+	    android:layout_marginTop="80dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentTop="true"/>
+
+	<RelativeLayout android:id="@+id/rl_progress_indicator"
+					android:layout_width="136dp"
+					android:layout_height="136dp"
+					android:background="@drawable/shape_progress_round"
+					android:layout_centerInParent="true"
+					android:visibility="gone">
+
+		<ImageView android:id="@+id/iv_indicator"
+				   android:layout_width="36dp"
+				   android:layout_height="36dp"
+				   android:layout_marginTop="36dp"
+				   android:layout_marginBottom="8dp"
+				   android:layout_centerHorizontal="true"
+				   android:background="@drawable/spinner"/>
+
+		<TextView android:id="@+id/tv_indicator"
+				  android:layout_width="match_parent"
+				  android:layout_height="wrap_content"
+				  android:layout_below="@+id/iv_indicator"
+				  android:layout_alignParentBottom="true"
+				  android:layout_marginBottom="8dp"
+				  android:gravity="center"
+				  android:text="@string/searching"
+				  android:textColor="@color/White"
+				  android:textSize="16sp"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>

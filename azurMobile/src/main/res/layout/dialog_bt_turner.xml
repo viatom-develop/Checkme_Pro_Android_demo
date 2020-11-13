@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_rect_rw">
+
+
+    <TextView android:id="@+id/tv_dialog_msg"
+              android:layout_width="250dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              android:padding="8dp"
+              android:gravity="center"
+              android:text="@string/turn_on_bt"
+              android:textColor="@color/Black_33"
+              android:textSize="@dimen/text_size_medium"
+              android:typeface="serif"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView android:id="@+id/tv_btn_bt_enable"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="8dp"
+                  android:gravity="center"
+                  android:text="@string/turn_on"
+                  android:textColor="@color/SkyBlue"/>
+
+        <TextView android:id="@+id/tv_btn_offline"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="8dp"
+                  android:gravity="center"
+                  android:text="@string/offline"
+                  android:textColor="@color/SkyBlue"/>
+
+    </LinearLayout>
+
+</LinearLayout>

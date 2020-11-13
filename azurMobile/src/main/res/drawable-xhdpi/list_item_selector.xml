@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 没有焦点时的背景颜色 -->
+    <!-- <item android:drawable="@color/Black" android:state_window_focused="false"/> -->
+    <!-- 选中时的背景颜色 -->
+    <item android:drawable="@color/Black" android:state_selected="true"/>
+    <!-- 获得焦点时的背景  颜色 -->
+    <item android:drawable="@color/DarkGray" android:state_focused="true"/>
+
+</selector>

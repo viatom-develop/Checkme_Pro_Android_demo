@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout android:id="@+id/rl_actionbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/WidgetActionBarH"
+        android:background="@drawable/action_bar_bg" >
+
+        <Button
+            android:id="@+id/WidgetActionbarBnMenu"
+            android:layout_width="@dimen/WidgetActionBarButtonLeftSize"
+            android:layout_height="@dimen/WidgetActionBarButtonLeftSize"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_back" />
+
+        <Button
+            android:id="@+id/WidgetActionbarBnShare"
+            android:layout_width="@dimen/WidgetActionBarButtonShareSize"
+            android:layout_height="@dimen/WidgetActionBarButtonShareSize"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_share"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/WidgetActionbarTextTitle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_disclaimer_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:textSize="@dimen/text_size_normal"
+        android:text="@string/tv_about_app_content"/>
+
+</LinearLayout>
+

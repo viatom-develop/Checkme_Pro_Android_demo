@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_show_play"
+    android:background="@color/Black" >
+
+    <RelativeLayout
+        android:id="@+id/rl_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/MonitorDarkBlue" >
+
+
+        <TextView
+            android:id="@+id/tv_play_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/MonitorLightBlue"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_name_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_play_name"
+            android:textColor="@color/MonitorLightBlue"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_play_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_name_val"
+            android:textColor="@color/MonitorLightBlue"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv_time_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_play_time"
+            android:textColor="@color/MonitorLightBlue"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+	
+    <LinearLayout
+        android:id="@+id/rl_components"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_status_bar"
+        android:divider="@drawable/component_sep_line"
+        android:orientation="vertical"
+        android:showDividers="middle" >
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_play_luzhi"
+        android:layout_below="@id/rl_status_bar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_lz"
+            android:layout_gravity="center_vertical"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_paly_time"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/White"
+            android:layout_gravity="center_vertical"
+            android:text="00:00:00"/>
+        
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ListECGMainReMain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bkg" >
+
+    <RelativeLayout
+        android:id="@+id/ListECGMainReMain_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="@dimen/ListECGMainReMainPaddingTB"
+        android:paddingLeft="@dimen/ListECGMainReMainPaddingLR"
+        android:paddingRight="@dimen/ListECGMainReMainPaddingLR"
+        android:paddingTop="@dimen/ListECGMainReMainPaddingTB" >
+
+        <LinearLayout
+            android:id="@+id/ListECGMainLinearDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ListECGMainTextTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/time"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/ListECGMainTextTimeTextSize" />
+
+            <TextView
+                android:id="@+id/ListECGMainTextDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/ListECGMainTextDateTimeDis"
+                android:text="@string/date"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/ListECGMainTextDateTextSize" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ListECGMainImgCheckMode"
+            android:layout_width="@dimen/ListECGMainImgCheckModeWH"
+            android:layout_height="@dimen/ListECGMainImgCheckModeWH"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ListECGMainImgCheckModeMarginLeft"
+            android:layout_toRightOf="@id/ListECGMainLinearDate" />
+
+        <ImageView
+            android:id="@+id/ListECGMainImgResult"
+            android:layout_width="@dimen/ListECGMainImgResultWH"
+            android:layout_height="@dimen/ListECGMainImgResultWH"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ListECGMainImgResultMarginLeft"
+            android:layout_toRightOf="@id/ListECGMainImgCheckMode"
+            android:gravity="center_vertical"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ListECGMainImgVoice"
+            android:layout_width="@dimen/ListECGMainImgVoiceW"
+            android:layout_height="@dimen/ListECGMainImgVoiceH"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ListECGMainImgVoiceMarginLeft"
+            android:layout_toRightOf="@id/ListECGMainImgResult"
+            android:gravity="center_vertical"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/ListECGMainBnAct"
+            android:layout_width="@dimen/ListECGMainBnActW"
+            android:layout_height="@dimen/ListECGMainBnActH"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_download"
+            android:clickable="false"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/ListECGMainPro"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/ListECGMainProH"
+        android:progressDrawable="@drawable/progress_bar" />
+
+</RelativeLayout>

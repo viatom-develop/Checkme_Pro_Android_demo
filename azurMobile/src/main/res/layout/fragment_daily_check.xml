@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ListBkg" >
+
+    <RelativeLayout
+        android:id="@+id/DailyCheckReChartMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_bkg"
+        android:paddingBottom="@dimen/TabPageReMainPaddingBottom"
+        android:paddingLeft="@dimen/TabPageReMainPaddingTLR"
+        android:paddingRight="@dimen/TabPageReMainPaddingTLR"
+        android:paddingTop="@dimen/TabPageReMainPaddingTLR"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/DailyCheckLinearDateSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" 
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/DailyCheckBnDay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_day"
+                android:text="@string/day"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/DailyCheckBnWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_week"
+                android:text="@string/week"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/DailyCheckBnMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_month"
+                android:text="@string/month"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/DailyCheckBnYear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_year"
+                android:text="@string/year"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/DailyCheckChartLinearBnChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" >
+
+            <Button
+                android:id="@+id/DailyCheckChartBnHR"
+                android:layout_width="@dimen/TabPageBnChartSize"
+                android:layout_height="@dimen/TabPageBnChartSize"
+                android:layout_weight="1"
+                android:background="@drawable/button_hr"
+                android:textColor="@color/HightLighBlue"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/DailyCheckChartBnSPO2"
+                android:layout_width="@dimen/TabPageBnChartSize"
+                android:layout_height="@dimen/TabPageBnChartSize"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_spo2"
+                android:textAlignment="center"
+                android:textColor="@color/HightLighBlue"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/DailyCheckChartBnPI"
+                android:layout_width="@dimen/TabPageBnChartSize"
+                android:layout_height="@dimen/TabPageBnChartSize"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_pi"
+                android:textColor="@color/HightLighBlue"
+                android:visibility="gone"/>
+            
+            <Button
+                android:id="@+id/DailyCheckChartBnBP"
+                android:layout_width="@dimen/TabPageBnChartSize"
+                android:layout_height="@dimen/TabPageBnChartSize"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bp"
+                android:textColor="@color/HightLighBlue"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <com.viatom.azur.widget.DailyCheckChartViewPager
+            android:id="@+id/DailyCheckChartViewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/DailyCheckChartLinearBnChart"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" 
+			android:layout_below="@id/DailyCheckLinearDateSwitch"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/DailyCheckReList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/DailyCheckReChartMain"
+        android:layout_marginLeft="@dimen/DailyCheckLinearListMarginLeft"
+        android:layout_marginRight="@dimen/DailyCheckLinearListMarginRight"
+        android:layout_marginTop="@dimen/DailyCheckLinearListMarginTop"
+        android:background="@color/ListBkg"
+        android:orientation="vertical" >
+
+        <!-- <ProgressBar
+            android:id="@+id/DailyCheckListPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" /> -->
+
+        <!-- <ListView
+            android:id="@+id/DailyCheckList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="@dimen/DailyCheckListDividerH"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="@dimen/DailyCheckListPaddingBottom"
+            android:visibility="invisible" /> -->
+        
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+	        android:id="@+id/DailyCheckList"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        android:divider="@null"
+	        android:dividerHeight="@dimen/DailyCheckListDividerH"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="@dimen/DailyCheckListPaddingBottom"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <ProgressBar
+            android:id="@+id/DailyCheckListPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    
+    <ImageView
+        android:id="@+id/ImgNoInfo"
+        android:layout_width="@dimen/ImgNoInfoSize"
+        android:layout_height="@dimen/ImgNoInfoSize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:src="@drawable/no_record"
+        android:visibility="invisible" />
+    
+</RelativeLayout>

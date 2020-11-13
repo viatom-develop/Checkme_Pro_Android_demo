@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rect_rw">
+
+    <TextView android:id="@+id/tv_dialog_title_choose_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="@string/tv_dialog_title_no_device_found"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/GrayText"/>
+
+    <ListView android:id="@+id/lv_list_bt_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+</LinearLayout>

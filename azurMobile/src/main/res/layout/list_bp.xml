@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_bkg">
+
+    <RelativeLayout
+        android:id="@+id/ListBPMain1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="@dimen/ListRLMReMainPaddingTB"
+        android:paddingLeft="@dimen/ListRLMReMainPaddingLR"
+        android:paddingRight="@dimen/ListRLMReMainPaddingLR"
+        android:paddingTop="@dimen/ListRLMReMainPaddingTB" >
+
+        <LinearLayout
+            android:id="@+id/ListBPLinearDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ListBPTextTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/ListRLMTextTimeSize" />
+
+            <TextView
+                android:id="@+id/ListBPTextDate"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/ListRLMTextTimeSize"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ListBPMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="6dp"
+            android:layout_below="@id/ListBPLinearDate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Gray"
+                android:text="@string/bp_sys_label"
+                android:textSize="@dimen/ListRLMTextTimeSize" />
+
+            <TextView
+                android:id="@+id/ListBPSysValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="8dp"
+                android:textSize="@dimen/ListRLMTextDateSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="8dp"
+                android:text="@string/bp_unit"
+                android:textSize="@dimen/ListRLMTextTimeSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Gray"
+                android:text="@string/bp_dia"
+                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/ListRLMTextTimeSize" />
+
+            <TextView
+                android:id="@+id/ListBPDiaValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="8dp"
+                android:textSize="@dimen/ListRLMTextDateSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="8dp"
+                android:text="@string/bp_unit"
+                android:textSize="@dimen/ListRLMTextTimeSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="6dp"
+            android:layout_below="@id/ListBPMain2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Gray"
+                android:text="@string/pr"
+                android:textSize="@dimen/ListRLMTextTimeSize" />
+
+            <TextView
+                android:id="@+id/ListBPPrValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="8dp"
+                android:textSize="@dimen/ListRLMTextDateSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="8dp"
+                android:text="@string/pr_unit"
+                android:textSize="@dimen/ListRLMTextTimeSize" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

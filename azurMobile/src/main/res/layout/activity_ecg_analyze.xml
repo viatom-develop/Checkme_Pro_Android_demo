@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ECGAnalyzeReTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_bkg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ECGAnalyzeBnBack"
+            android:layout_width="@dimen/BnBackW"
+            android:layout_height="@dimen/BnBackH"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_back" />
+
+        <TextView
+            android:id="@+id/ECGAnalyzeTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_ecg"
+            android:textColor="@color/White" 
+            android:textSize="@dimen/TitleSize"/>
+        
+        <!-- <Button
+            android:id="@+id/ECGAnalyzeBnShare"
+            android:layout_width="@dimen/BnShareW"
+            android:layout_height="@dimen/BnShareH"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_share" /> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ECGAnalyzeLinearChart"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ECGAnalyzeReTitle"
+        android:layout_marginBottom="@dimen/ECGAnalyzeLinearChartMarginBottom"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:tileMode="repeat" >
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/ECGAnalyzeSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:progress="0" 
+        android:background="@color/TabBarBkg"
+        android:progressDrawable="@drawable/seek_bar_pro_bkg"/>
+
+</RelativeLayout>

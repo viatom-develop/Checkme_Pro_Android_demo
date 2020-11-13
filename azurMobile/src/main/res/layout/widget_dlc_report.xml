@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:paddingBottom="40px"
+    android:paddingLeft="103px"
+    android:paddingRight="103px"
+    android:paddingTop="30px" > <!-- 左右各空17.5mm -->
+
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5px"
+        android:paddingRight="5px" >
+
+        <TextView
+            android:id="@+id/tv_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/report"
+            android:textSize="25px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="160px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/viatom_logo1"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <!-- 用户信息和诊断结果 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_summary"
+        android:layout_width="match_parent"
+        android:layout_height="425px"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="10px"
+        android:background="@drawable/border_report_rect"
+        android:paddingBottom="17px"
+        android:paddingLeft="25px"
+        android:paddingRight="25px"
+        android:paddingTop="17px" >
+
+        <!-- 用户信息 -->
+
+        <LinearLayout
+            android:id="@+id/ll_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5px"
+            android:paddingLeft="7px"
+            android:paddingRight="7px"
+            android:paddingTop="5px" >
+
+            <!-- 用户名 -->
+
+            <LinearLayout
+                android:id="@+id/ll_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/name"
+                    android:textSize="21px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_name_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/seperator"
+                    android:textSize="21px" />
+            </LinearLayout>
+
+            <!-- 性别 -->
+
+            <LinearLayout
+                android:id="@+id/ll_gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/gender"
+                    android:textSize="21px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_gender_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/seperator"
+                    android:textSize="21px" />
+            </LinearLayout>
+
+            <!-- 出生日期 -->
+
+            <LinearLayout
+                android:id="@+id/ll_birth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/date_of_birth"
+                    android:textSize="21px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_birth_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/seperator"
+                    android:textSize="21px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_user_info"
+            android:orientation="vertical"
+            android:paddingBottom="5px"
+            android:paddingLeft="7px"
+            android:paddingRight="7px"
+            android:paddingTop="5px" >
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/remarks"
+                android:textSize="21px"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_seperator1"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="30px"
+                android:src="@drawable/border_seperator" />
+
+            <ImageView
+                android:id="@+id/iv_seperator2"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="40px"
+                android:src="@drawable/border_seperator" />
+        </LinearLayout>
+
+        <!-- 测量模式及测量时间 -->
+
+        <LinearLayout
+            android:id="@+id/ll_result1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_remark"
+            android:orientation="horizontal"
+            android:paddingBottom="5px"
+            android:paddingLeft="7px"
+            android:paddingRight="7px"
+            android:paddingTop="5px" >
+
+            <!-- 测量模式 -->
+
+            <LinearLayout
+                android:id="@+id/ll_measure_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_measure_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/measuring_mode"
+                    android:textSize="21px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_measure_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="21px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_measure_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_measure_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/date_time"
+                    android:textSize="21px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_measure_date_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="21px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 心率，QRS，ST -->
+
+        <LinearLayout
+            android:id="@+id/ll_result2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_result1"
+            android:orientation="horizontal"
+            android:paddingBottom="5px"
+            android:paddingLeft="7px"
+            android:paddingRight="7px"
+            android:paddingTop="5px" >
+
+            <!-- 心率 -->
+
+            <LinearLayout
+                android:id="@+id/ll_hr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_hr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/heart_rate_2"
+                    android:textSize="21px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_hr_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="21px" />
+            </LinearLayout>
+
+            <!-- qrs -->
+
+            <LinearLayout
+                android:id="@+id/ll_qrs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_qrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="QRS: "
+                    android:textSize="21px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_qrs_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="21px" />
+            </LinearLayout>
+            <!-- qt -->
+            <LinearLayout
+                android:id="@+id/ll_qt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_qt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="QT: "
+                    android:textSize="21px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_qt_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="21px" />
+            </LinearLayout>
+            <!-- qtc -->
+
+            <LinearLayout
+                android:id="@+id/ll_qtc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_qtc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="QTc: "
+                    android:textSize="21px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_qtc_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="21px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ecg诊断结果 -->
+
+        <LinearLayout
+            android:id="@+id/ll_result3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_result2"
+            android:orientation="horizontal"
+            android:paddingBottom="5px"
+            android:paddingLeft="7px"
+            android:paddingRight="7px"
+            android:paddingTop="5px" >
+
+            <TextView
+                android:id="@+id/tv_ecg_diagnostic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="ECG: "
+                android:textSize="21px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_ecg_diagnostic_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="21px" />
+        </LinearLayout>
+
+        <!-- 血氧 -->
+
+        <LinearLayout
+            android:id="@+id/ll_result4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_result3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5px"
+            android:paddingLeft="7px"
+            android:paddingRight="7px"
+            android:paddingTop="5px" >
+
+            <LinearLayout
+                android:id="@+id/ll_spo2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_spo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/spo2"
+                    android:textSize="21px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_spo2_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="21px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="PI: "
+                    android:textSize="21px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_pi_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="21px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 血氧诊断结果 -->
+
+        <LinearLayout
+            android:id="@+id/ll_result5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_result4"
+            android:orientation="horizontal"
+            android:paddingBottom="5px"
+            android:paddingLeft="7px"
+            android:paddingRight="7px"
+            android:paddingTop="5px" >
+
+            <TextView
+                android:id="@+id/tv_spo2_diagnostic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/oxygen_saturation_2"
+                android:textSize="21px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_spo2_diagnostic_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="21px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_result6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_result5"
+            android:orientation="horizontal"
+            android:paddingBottom="5px"
+            android:paddingLeft="7px"
+            android:paddingRight="7px"
+            android:paddingTop="5px" >
+
+            <!--
+                 <TextView
+                android:id="@+id/tv_bp_diagnostic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Pressure description: "
+                android:textSize="21px"
+                android:textStyle="bold" />
+            -->
+
+            <TextView
+                android:id="@+id/tv_bp_val"
+                android:layout_width="wrap_content"
+                android:layout_height="40px"
+                android:singleLine="true"
+                android:textSize="21px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 波形layout，高度200mm，8行2.5mV,7秒数据 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_wave"
+        android:layout_width="match_parent"
+        android:layout_height="1033px"
+        android:layout_below="@+id/rl_summary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60px" >
+    </RelativeLayout>
+
+    <!-- 标尺及带宽信息 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_other_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_wave"
+        android:layout_marginTop="5px" >
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:textSize="21px" />
+
+        <TextView
+            android:id="@+id/tv_ruler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@+id/tv_filter"
+            android:singleLine="true"
+            android:text="10mm/mV   25mm/s"
+            android:textSize="21px" />
+    </RelativeLayout>
+
+</RelativeLayout>

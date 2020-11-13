@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CE.iml" filepath="$PROJECT_DIR$/CE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/azurMobile/azurMobile.iml" filepath="$PROJECT_DIR$/azurMobile/azurMobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blelib/blelib.iml" filepath="$PROJECT_DIR$/blelib/blelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mPChartLib/mPChartLib.iml" filepath="$PROJECT_DIR$/mPChartLib/mPChartLib.iml" />
+    </modules>
+  </component>
+</project>

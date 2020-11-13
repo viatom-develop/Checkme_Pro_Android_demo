@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ListBkg" >
+
+
+    <RelativeLayout
+        android:id="@+id/DailyCheckDetailReChartMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_list_item" 
+        android:layout_margin="@dimen/DailyCheckDetailReChartMainMargin">
+
+         <TextView
+            android:id="@+id/DailyCheckDetailTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/TabECGTextDateMarginBottom"
+            android:layout_marginRight="@dimen/TabECGTextDateMarginRight"
+            android:textColor="@color/Gray" />
+
+        <TextView
+            android:id="@+id/DailyCheckDetailTextBand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/DailyCheckDetailTextDate"
+            android:layout_marginRight="@dimen/TabECGTextBandMarginRight"
+            android:layout_toLeftOf="@id/DailyCheckDetailTextDate"
+            android:textColor="@color/Gray" />
+        
+        <RelativeLayout
+            android:id="@+id/DailyCheckDetailReChart"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/DailyCheckDetailTextDate"
+            android:layout_margin="5dp">
+        </RelativeLayout>
+
+       
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ListBkg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_summary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DailyCheckDetailSummaryH"
+        android:layout_marginLeft="@dimen/DailyCheckDetailSummaryMargin"
+        android:layout_marginRight="@dimen/DailyCheckDetailSummaryMargin"
+        android:layout_marginTop="@dimen/DailyCheckDetailSummaryMargin"
+        android:background="@drawable/border_list_item" >
+
+        <RelativeLayout
+            android:id="@+id/rl_summary_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DailyCheckDetailSummarySubH1" >
+
+            <TextView
+                android:id="@+id/tv_hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/DailyCheckDetailSummaryTextMarginLeft"
+                android:layout_marginTop="@dimen/DailyCheckDetailSummaryTextMarginTop"
+                android:gravity="center"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/DailyCheckDetailSummaryTextSize" />
+
+            <TextView
+                android:id="@+id/tv_qrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_hr"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/DailyCheckDetailSummaryTextSize" />
+
+            <TextView
+                android:id="@+id/tv_qt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_hr"
+                android:layout_marginLeft="@dimen/DailyCheckDetailSummaryTextMarginLeft"
+                android:layout_marginTop="@dimen/DailyCheckDetailSummaryTextMarginTop"
+                android:gravity="center"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/DailyCheckDetailSummaryTextSize" />
+
+            <TextView
+                android:id="@+id/tv_qtc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_qrs"
+                android:layout_alignLeft="@id/tv_qrs"
+                android:layout_marginTop="@dimen/DailyCheckDetailSummaryTextMarginTop"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/DailyCheckDetailSummaryTextSize" />
+
+            <TextView
+                android:id="@+id/tv_ecg_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_qt"
+                android:layout_below="@id/tv_qt"
+                android:layout_marginTop="@dimen/DailyCheckDetailSummaryTextMarginTop"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/DailyCheckDetailSummaryTextSize"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_ecg"
+                android:layout_width="@dimen/DailyCheckDetailSummaryImgWH"
+                android:layout_height="@dimen/DailyCheckDetailSummaryImgWH"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/DailyCheckDetailSummaryImgResultMarginRight"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DailyCheckDetailSummaryLineH"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/DailyCheckDetailSummaryLineMarginLR"
+                android:layout_marginRight="@dimen/DailyCheckDetailSummaryLineMarginLR"
+                android:src="@drawable/divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_summary_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DailyCheckDetailSummarySubH"
+            android:layout_below="@id/rl_summary_1" >
+
+            <TextView
+                android:id="@+id/tv_spo2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DailyCheckDetailSummaryTextSPO2H"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/DailyCheckDetailSummaryTextMarginLeft"
+                android:layout_marginTop="@dimen/DailyCheckDetailSummaryTextMarginTop"
+                android:gravity="center"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/DailyCheckDetailSummaryTextSize" />
+
+            <TextView
+                android:id="@+id/tv_pi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/DailyCheckDetailSummaryTextMarginTop"
+                android:gravity="center"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/DailyCheckDetailSummaryTextSize"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_spo2_result"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DailyCheckDetailSummaryTextSPO2H"
+                android:layout_alignLeft="@id/tv_spo2"
+                android:layout_below="@id/tv_spo2"
+                android:gravity="center"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/DailyCheckDetailSummaryTextSize" />
+
+            <ImageView
+                android:id="@+id/iv_spo2"
+                android:layout_width="@dimen/DailyCheckDetailSummaryImgWH"
+                android:layout_height="@dimen/DailyCheckDetailSummaryImgWH"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/DailyCheckDetailSummaryImgResultMarginRight" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DailyCheckDetailSummaryLineH"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/DailyCheckDetailSummaryLineMarginLR"
+                android:layout_marginRight="@dimen/DailyCheckDetailSummaryLineMarginLR"
+                android:src="@drawable/divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_summary_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DailyCheckDetailSummarySubH"
+            android:layout_below="@id/rl_summary_2" >
+
+            <TextView
+                android:id="@+id/tv_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/DailyCheckDetailSummaryTextMarginLeft"
+                android:layout_marginTop="@dimen/DailyCheckDetailSummaryTextMarginTop"
+                android:gravity="center"
+                android:textColor="@color/GrayText"
+                android:textSize="@dimen/DailyCheckDetailSummaryTextSize" />
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                android:layout_width="@dimen/DailyCheckDetailSummaryImgWH"
+                android:layout_height="@dimen/DailyCheckDetailSummaryImgWH"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/DailyCheckDetailSummaryImgVoiceMarginRight"
+                android:clickable="true" />
+
+            <ProgressBar
+                android:id="@+id/pro_voice"
+                android:layout_width="@dimen/DailyCheckDetailSummaryImgWH"
+                android:layout_height="@dimen/DailyCheckDetailSummaryImgWH"
+                android:layout_alignLeft="@id/iv_voice"
+                android:layout_alignTop="@id/iv_voice"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_temp"
+                android:layout_width="@dimen/DailyCheckDetailSummaryImgWH"
+                android:layout_height="@dimen/DailyCheckDetailSummaryImgWH"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/DailyCheckDetailSummaryImgResultMarginRight" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_chart_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_summary"
+        android:layout_margin="@dimen/DailyCheckDetailReChartMainMargin"
+        android:background="@drawable/border_list_item" >
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/TabECGTextDateMarginBottom"
+            android:layout_marginRight="@dimen/TabECGTextDateMarginRight"
+            android:textColor="@color/Gray" />
+
+        <TextView
+            android:id="@+id/tv_band"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_date"
+            android:layout_marginRight="@dimen/TabECGTextBandMarginRight"
+            android:layout_toLeftOf="@id/DailyCheckDetailTextDate"
+            android:textColor="@color/Gray" />
+
+        <ScrollView
+            android:id="@+id/sv_chart"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/tv_date"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/rl_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ECGDetailChartMarginTB"
+                android:layout_marginLeft="@dimen/ECGDetailChartMarginLR"
+                android:layout_marginRight="@dimen/ECGDetailChartMarginLR"
+                android:layout_marginTop="@dimen/ECGDetailChartMarginTB"
+                android:background="@color/Gray" >
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

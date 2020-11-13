@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_vals"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_main_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="--"
+            android:textColor="@color/MonitorSkyBlue"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/tv_left_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="SpO2"
+            android:textColor="@color/MonitorSkyBlue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_right_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="%"
+            android:textColor="@color/MonitorSkyBlue"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_pi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_main_val"
+            android:layout_below="@+id/tv_main_val"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PI:"
+                android:textColor="@color/MonitorSkyBlue"
+                android:textSize="20sp" 
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_pi_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="--"
+                android:textColor="@color/MonitorSkyBlue"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        
+        <!-- <LinearLayout
+            android:id="@+id/ll_pr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ll_pi"
+            android:layout_below="@+id/ll_pi"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_pr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PR:"
+                android:textColor="@color/MonitorSkyBlue"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_pr_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="-"
+                android:textColor="@color/MonitorSkyBlue"
+                android:textSize="20sp" 
+                android:layout_weight="1"/>
+        </LinearLayout> -->
+        
+    <com.viatom.azur.monitor.widget.OxiValueView
+        android:id="@+id/wg_oxi_val"
+        android:layout_width="24dp"
+        android:layout_height="130dp"
+		android:layout_toLeftOf="@+id/tv_main_val"
+		android:layout_marginRight="15dp"
+		android:layout_alignBottom="@+id/ll_pi" />
+    </RelativeLayout>
+
+    
+    <ImageView
+        android:id="@+id/iv_sep"
+        android:layout_width="4px"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/rl_vals"
+        android:background="@color/MonitorDarkBlue" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/iv_sep" >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="colorPrimary">#1596D2</color>
+	<color name="colorPrimaryDark">#1596D2</color>
+	<color name="colorAccent">#FF4081</color>
+
+	<color name="White">#FFFFFF</color>
+	<color name="Black">#000000</color>
+	<color name="Black_33">#cc000000</color>
+	<color name="white_33">#66ffffff</color>
+	<color name="white_88">#88ffffff</color>
+	<color name="white_dd">#aaffffff</color>
+	<color name="GrayWhite">#EEEEEE</color>
+	<color name="Gray">#CCCCCC</color>
+	<color name="DarkGray">#666666</color>
+	<color name="SkyBule">#0099FF</color>
+	<color name="SkyBlue">#0099FF</color>
+	<color name="DLTClick">#D4F4FE</color>
+	<color name="TopBarBkg">#0083BB</color>
+	<color name="UserBnClick">#016FB5</color>
+	<color name="SpinerBkg">#5AC0F2</color>
+	<color name="Test">#009ADC</color>
+	<color name="default_bkg">#1596D2</color>
+	<color name="TabBarBkg">#444444</color>
+	<color name="ListBkg">#E9E9E9</color>
+	<color name="GrayText">#898989</color>
+	<color name="HightLighBlue">#0EB6FD</color>
+	<color name="JProgressDialogBg">#727072</color>
+
+	<color name="MonitorDarkBlue">#364553</color>
+	<color name="MonitorMidBlue">#364553</color>
+	<color name="MonitorLightBlue">#a6b8ca</color>
+	<color name="MonitorGreen">#1e830e</color>
+	<color name="MonitorSkyBlue">#2f8585</color>
+	<color name="MonitorYellow">#e9bb04</color>
+	<color name="MonitorRed">#cb0913</color>
+
+	<color name="transparent">#00000000</color>
+	<color name="button_red">#ff8080</color>
+	<color name="dialog_btn_positive_red">#FF2200</color>
+	<color name="dialog_btn_positive_red_press">#ff3000</color>
+	<color name="dialog_btn_positive_blue">#016FB5</color>
+	<color name="dialog_btn_positive_blue_press">#1596D2</color>
+
+	<color name="abs__background_holo_dark">#ff000000</color>
+	<color name="abs__background_holo_light">#fff3f3f3</color>
+	<color name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</color>
+	<color name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</color>
+	<color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+	<color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+
+</resources>

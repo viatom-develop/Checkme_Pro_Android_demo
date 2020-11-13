@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ListBkg"
+    android:paddingLeft="@dimen/ChoseUserReMainPaddingLR"
+    android:paddingRight="@dimen/ChoseUserReMainPaddingLR"
+    android:paddingTop="@dimen/ChoseUserReMainPaddingTop" >
+
+    <ListView
+        android:id="@+id/ChoseUserListUserList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="@null" 
+        android:dividerHeight="@dimen/ChoseUserListDividerH"/>
+
+</RelativeLayout>
