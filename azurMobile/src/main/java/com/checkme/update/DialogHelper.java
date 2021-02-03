@@ -5,12 +5,13 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringRes;
-import android.support.annotation.StyleRes;
-import android.support.v4.app.DialogFragment;
+import androidx.annotation.IdRes;
+import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
+
+import androidx.annotation.StringRes;
+import androidx.annotation.StyleRes;
 import android.util.SparseArray;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -24,7 +25,7 @@ import com.checkme.newazur.R;
 /**
  * Created by gongguopei on 2017/12/26.
  */
-public class DialogHelper<T extends View> extends DialogFragment{
+public class DialogHelper<T extends View> extends DialogFragment {
 
     private View contentView;
     private SparseArray<T> views;

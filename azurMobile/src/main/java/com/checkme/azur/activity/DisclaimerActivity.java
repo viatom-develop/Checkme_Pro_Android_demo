@@ -5,7 +5,7 @@ import android.widget.TextView;
 
 import com.checkme.newazur.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
@@ -13,14 +13,13 @@ import butterknife.OnClick;
  */
 public class DisclaimerActivity extends com.checkme.update.BaseActivity{
 
-    @Bind(R.id.WidgetActionbarTextTitle)
+    @BindView(R.id.WidgetActionbarTextTitle)
     TextView title;
 
-    @Bind(R.id.tv_disclaimer_content)
+    @BindView(R.id.tv_disclaimer_content)
     TextView mArticleTextView;
 
 //    int width;
-
     @Override
     protected int getContentViewId() {
         return R.layout.activity_disclaimer;
@@ -33,7 +32,9 @@ public class DisclaimerActivity extends com.checkme.update.BaseActivity{
 
     @Override
     protected void initView() {
-        title.setText(R.string.tv_about_this_app);
+        if(title != null) {
+            title.setText(R.string.tv_about_this_app);
+        }
     }
 
     @OnClick(R.id.WidgetActionbarBnMenu)

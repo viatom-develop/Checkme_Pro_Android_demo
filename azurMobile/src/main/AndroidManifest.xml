@@ -36,7 +36,10 @@
         android:allowBackup="false"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:theme="@style/AppBaseTheme">
+        android:theme="@style/AppBaseTheme"
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="q">
+
         <activity
             android:name="com.checkme.azur.activity.MainActivity"
             android:configChanges="orientation|screenSize|fontScale|locale|layoutDirection"
@@ -195,7 +198,7 @@
         </service>
 
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="com.checkme.azur.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CE.iml" filepath="$PROJECT_DIR$/CE.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/azurMobile/CE.azurMobile.iml" filepath="$PROJECT_DIR$/.idea/modules/azurMobile/CE.azurMobile.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/blelib/CE.blelib.iml" filepath="$PROJECT_DIR$/.idea/modules/blelib/CE.blelib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/CE.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/CE.library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mPChartLib/CE.mPChartLib.iml" filepath="$PROJECT_DIR$/.idea/modules/mPChartLib/CE.mPChartLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Checkme_Pro_Android_demo.iml" filepath="$PROJECT_DIR$/.idea/modules/Checkme_Pro_Android_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/azurMobile/Checkme_Pro_Android_demo.azurMobile.iml" filepath="$PROJECT_DIR$/.idea/modules/azurMobile/Checkme_Pro_Android_demo.azurMobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/blelib/Checkme_Pro_Android_demo.blelib.iml" filepath="$PROJECT_DIR$/.idea/modules/blelib/Checkme_Pro_Android_demo.blelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/Checkme_Pro_Android_demo.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/Checkme_Pro_Android_demo.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mPChartLib/Checkme_Pro_Android_demo.mPChartLib.iml" filepath="$PROJECT_DIR$/.idea/modules/mPChartLib/Checkme_Pro_Android_demo.mPChartLib.iml" />
     </modules>
   </component>
 </project>

@@ -31,10 +31,10 @@ import android.os.Message;
 import android.os.PersistableBundle;
 import android.os.Process;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringRes;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.annotation.NonNull;
+import androidx.annotation.StringRes;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.Menu;
@@ -526,9 +526,10 @@ public class MainActivity extends com.checkme.update.BaseActivity implements OnC
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == Constant.REQUEST_TURN_ON_BT) {
 
-            if(resultCode == Activity.RESULT_OK) {
+            if (resultCode == Activity.RESULT_OK) {
                 btDialogDismiss();
                 needShowBtDialog = false;
                 prepareSearchBT(500);
@@ -548,18 +549,18 @@ public class MainActivity extends com.checkme.update.BaseActivity implements OnC
             finish();
             System.exit(0);
 
-        } else if(requestCode == Constant.REQUEST_LOCATION_SETTINGS) {
+        } else if (requestCode == Constant.REQUEST_LOCATION_SETTINGS) {
             mLocationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
             boolean isGpsEnable = mLocationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
             boolean isNetLocationEnable = mLocationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
-            if(!isGpsEnable || !isNetLocationEnable) {
+            if (!isGpsEnable || !isNetLocationEnable) {
                 locationDialogInit();
                 locationDialogShow();
             } else {
                 needShowLocationDialog = false;
 //                prepareSearchBT(1000);
             }
-        } else if(requestCode == com.checkme.azur.monitor.element.Constant.REQUEST_COME_INTO_MONITOR) {
+        } else if (requestCode == com.checkme.azur.monitor.element.Constant.REQUEST_COME_INTO_MONITOR) {
             finish();
         }
     }

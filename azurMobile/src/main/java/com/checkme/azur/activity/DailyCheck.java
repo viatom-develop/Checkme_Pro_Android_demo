@@ -9,9 +9,9 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
@@ -71,8 +71,18 @@ public class DailyCheck extends BaseActivity implements ReadFileListener {
                         public void run() {
                             initDailyCheckMainFragment();
                             reFreshActionBarBn(0, true, false);
-                            reFreshTitle(Constant.getString(R.string.title_dlc) + " - "
-                                    + Constant.curUser.getUserInfo().getName());
+                            String userName = "";
+                            if(Constant.curUser != null && Constant.curUser.getUserInfo() != null) {
+                                userName = Constant.curUser.getUserInfo().getName();
+                                if(!TextUtils.isEmpty(userName)) {
+                                    userName = userName.trim();
+                                }
+                            }
+                            if(!TextUtils.isEmpty(userName)) {
+                                reFreshTitle(Constant.getString(R.string.title_dlc) + " - " + userName);
+                            } else {
+                                reFreshTitle(Constant.getString(R.string.title_dlc));
+                            }
                         }
                     }, 300);
                     break;
@@ -624,8 +634,18 @@ public class DailyCheck extends BaseActivity implements ReadFileListener {
             setSlidingMenu();
             initDailyCheckMainFragment();
             reFreshActionBarBn(0, true, false);
-            reFreshTitle(Constant.getString(R.string.title_dlc) + " - "
-                    + Constant.curUser.getUserInfo().getName());
+            String userName = "";
+            if(Constant.curUser != null && Constant.curUser.getUserInfo() != null) {
+                userName = Constant.curUser.getUserInfo().getName();
+                if(!TextUtils.isEmpty(userName)) {
+                    userName = userName.trim();
+                }
+            }
+            if(!TextUtils.isEmpty(userName)) {
+                reFreshTitle(Constant.getString(R.string.title_dlc) + " - " + userName);
+            } else {
+                reFreshTitle(Constant.getString(R.string.title_dlc));
+            }
         }
         showGuide();
     }
@@ -672,8 +692,18 @@ public class DailyCheck extends BaseActivity implements ReadFileListener {
             setSlidingMenu();
             initDailyCheckMainFragment();
             reFreshActionBarBn(0, true, false);
-            reFreshTitle(Constant.getString(R.string.title_dlc) + " - "
-                    + Constant.curUser.getUserInfo().getName());
+            String userName = "";
+            if(Constant.curUser != null && Constant.curUser.getUserInfo() != null) {
+                userName = Constant.curUser.getUserInfo().getName();
+                if(!TextUtils.isEmpty(userName)) {
+                    userName = userName.trim();
+                }
+            }
+            if(!TextUtils.isEmpty(userName)) {
+                reFreshTitle(Constant.getString(R.string.title_dlc) + " - " + userName);
+            } else {
+                reFreshTitle(Constant.getString(R.string.title_dlc));
+            }
         } else {// 没有用户文件
             processNoUserFile();
         }
@@ -687,8 +717,18 @@ public class DailyCheck extends BaseActivity implements ReadFileListener {
         findViewById(R.id.ImgNoInfo).setVisibility(View.VISIBLE);
         setSlidingMenu();
         reFreshActionBarBn(0, true, false);
-        reFreshTitle(Constant.getString(R.string.title_dlc) + " - "
-                + Constant.curUser.getUserInfo().getName());
+        String userName = "";
+        if(Constant.curUser != null && Constant.curUser.getUserInfo() != null) {
+            userName = Constant.curUser.getUserInfo().getName();
+            if(!TextUtils.isEmpty(userName)) {
+                userName = userName.trim();
+            }
+        }
+        if(!TextUtils.isEmpty(userName)) {
+            reFreshTitle(Constant.getString(R.string.title_dlc) + " - " + userName);
+        } else {
+            reFreshTitle(Constant.getString(R.string.title_dlc));
+        }
 //        new AlertDialog.Builder(DailyCheck.this)
 //                .setTitle(Constant.getString(R.string.warning))
 //                .setMessage(Constant.getString(R.string.no_user_info)).setCancelable(false)

@@ -3,7 +3,7 @@ package com.checkme.bluetooth.ble;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.text.TextUtils;
 
 import com.polidea.rxandroidble2.RxBleClient;

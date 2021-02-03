@@ -6,9 +6,9 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
@@ -43,8 +43,18 @@ public class SpotCheck extends BaseActivity implements ReadFileListener{
 						public void run() {
 							initSpotCheckMainFragment();
 							reFreshActionBarBn(0,true,false);
-							reFreshTitle(Constant.getString(R.string.title_spot_check) + " - "
-									+ new String(Constant.curSpotUser.getUserInfo().getPatientID()));
+							String patientId = "";
+							if(Constant.curSpotUser != null && Constant.curSpotUser.getUserInfo() != null) {
+								patientId = Constant.curSpotUser.getUserInfo().getPatientID();
+								if(!TextUtils.isEmpty(patientId)) {
+									patientId = patientId.trim();
+								}
+							}
+							if(!TextUtils.isEmpty(patientId)) {
+								reFreshTitle(Constant.getString(R.string.title_spot_check) + " - " + patientId);
+							} else {
+								reFreshTitle(Constant.getString(R.string.title_spot_check));
+							}
 						}
 					}, 300);
 					break;

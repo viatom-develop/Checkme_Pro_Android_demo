@@ -9,6 +9,7 @@ import java.util.Map;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ListView;
@@ -173,8 +174,14 @@ public class PedMain extends BaseActivity implements View.OnClickListener
 	public void refreshView() {
 		((ProgressBar) findViewById(R.id.PedMainListPro))
 				.setVisibility(View.INVISIBLE);
-		reFreshTitle(getResources().getString(R.string.title_ped)
-				+ " - " + Constant.curUser.getUserInfo().getName());
+
+		if(Constant.curUser != null && !TextUtils.isEmpty(Constant.curUser.getUserInfo().getName().trim())) {
+			reFreshTitle(getResources().getString(R.string.title_ped)
+					+ " - " + Constant.curUser.getUserInfo().getName());
+		} else {
+			reFreshTitle(getResources().getString(R.string.title_ped));
+		}
+
 		reFreshActionBarBn(0, true, false);
 		processPedList();
 		refreshNoInfoView();

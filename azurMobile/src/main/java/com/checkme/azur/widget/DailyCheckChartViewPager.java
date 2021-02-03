@@ -1,11 +1,12 @@
 package com.checkme.azur.widget;
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-public class DailyCheckChartViewPager extends ViewPager {  
+import androidx.viewpager.widget.ViewPager;
+
+public class DailyCheckChartViewPager extends ViewPager {
 	  
     private boolean isCanScroll = false;  
   
